@@ -107,7 +107,7 @@ title: ReactiveCocoa Presentation
 		Signals in ReactiveCocoa are represented by the <code>RACSignal</code> class. They're created in one of two ways: either by wrapping a <code>@property</code> using KVO or using one of the ReactiveCocoa extensions in UIKit, like the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIControl%2BRACSignalSupport.h">button</a> or <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIGestureRecognizer%2BRACSignalSupport.h">gesture recognizer</a> I mentioned earlier. 
 	</p>
 	<p>
-		Signals always deal with <code>id</code>, never primitives. ReactiveCocoa will automatically take care of wrapping primitives, rects, and points in <code>NSNumber</code> objects for you. 
+		Signals always deal with <code>id</code>, never primitives. ReactiveCocoa will automatically take care of wrapping primitives, rects, and points in <code>NSValue</code> objects for you. 
 	</p>
 	<p>
 		Another core concept in ReactiveCocoa is that of <em>derived state</em>. State is OK in ReactiveCocoa, as long as its bound to a signal. 
