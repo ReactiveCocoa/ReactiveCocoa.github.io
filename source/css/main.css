@@ -93,6 +93,138 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.65);
+    font-size: 21px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+p {
+    max-width: 30em;
+    margin: 1em auto;
+}
+
+section { 
+    padding: 4em 1em; 
+}
+section.light { 
+    background-color: #e7f3ef; 
+    color: #8C6429; 
+}
+section.grey { 
+    background-color: #73726D; 
+    color: #e7f3ef; 
+}
+section.brown {
+    background-color: #8C6429; 
+    color: #E7F3EF; 
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h1.emph { 
+    color: #55C3DC;
+}
+
+h1.emph:before {
+    content: '';
+    display: block;
+    margin: 0 auto 1em auto; 
+    width: 3em;
+    border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+h1.emph:after{
+    content: '';
+    display: block;
+    margin: 1em auto 0 auto; 
+    width: 3em;
+    border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+hr {
+    width: 33%;
+    max-width: 15em;
+    border: none;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    margin: 4em auto;
+}
+
+div.clear { clear: both; }
+
+
+/* TITLE */
+section.title {
+    background-color: #73726D;
+    padding-top: 0.5em;
+}
+
+section.title h1 {
+    text-align: left;
+    max-width: 7.5em;
+    margin: 0.5em auto 1em auto;
+    color: #55C3DC;
+    font-size: 4em;
+    line-height: 1;
+}
+
+section.title h1 span {
+    color: rgba(255,255,255,0.2);
+}
+
+section.title p, section.title p a {
+    color: #E7F3EF;
+    font-style: italic;
+}
+
+section.title p a {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* quote */
+
+section.quote blockquote {
+    font-family: serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.quote p {
+    text-align: center;
+}
+
+/* foreword */
+
+section.foreword { 
+    text-align: center; font-size: 0.9em; 
+}
+
+section.foreward p a {
+    color: #73726D;
+}
+
+section.danger h1.emph {
+    color: #E24B2C;
+}
 
 
 
@@ -108,6 +240,39 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+@media only screen and (max-width: 55em) {  
+    body { 
+        font-size: 18px; 
+    } 
+}
+@media only screen and (max-width: 45em) { 
+    section.title h1 { 
+        font-size: 3em; 
+    }
+}
+@media only screen and (max-width: 30em) {
+    section { 
+        padding-top: 2em; padding-bottom: 2em; 
+    }
+    h1.emph { 
+        font-size: 1.8em; 
+    }
+    section.title h1 { 
+        font-size: 2em; 
+    }
+    p { 
+        -webkit-hyphens: auto; 
+        -moz-hyphens: auto; 
+        hyphens: auto; 
+    }
+}
 
 /* ==========================================================================
    Helper classes
@@ -208,19 +373,4 @@ textarea {
 
 .clearfix {
     *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
 }
