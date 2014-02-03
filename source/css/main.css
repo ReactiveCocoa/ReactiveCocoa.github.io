@@ -91,6 +91,8 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+
+   Colour palette: http://www.colourlovers.com/palette/2031322/ice_coffee
    ========================================================================== */
 
 body {
@@ -246,6 +248,30 @@ section.danger h1.emph {
 
 
 
+/******
+FOOTER
+*******/
+
+footer {
+    background-color: #73726D;
+    font-size: 0.8em;
+    padding: 3em 1em;
+    color: #E7F3EF;
+    text-align: center;
+}
+
+footer p {
+    max-width: 36.5em;
+}
+
+footer a {
+    color: #55C3DC;
+    border-bottom: 1px solid #55C3DC;
+}
+
+/*
+Media Queries
+*/
 
 @media only screen and (max-width: 55em) {  
     body { 

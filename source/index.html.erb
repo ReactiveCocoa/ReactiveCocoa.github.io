@@ -51,6 +51,51 @@ title: ReactiveCocoa Presentation
 		When we rely on hoping that the behaviour that emerges from a program is correct, and that reliance is based on nothing more than a programmer's correctness, then we can easily find ourselves in a <a href="http://en.wikipedia.org/wiki/Therac-25">sticky Situation</a>. We can try and mitigate the risks of imparative, hope-based programming with things like unit tests or integration tests, but why mitigate the risk when there's a better way? 
 	</p>
 	<p>
-		Instead of telling a computer <em>how</em> to do it's job, why don't we just tell it <em>what</em> it's job is and let it figure the rest out? 
+		Instead of telling a computer <em>how</em> to do it's job, why don't we just tell it <em>what</em> it's job is and let it figure the rest out? The bottom line is imperative programming is dangerous and relies too heavily on the infallibility of the programmer. 
+	</p>
+	<h1 class="emph">
+		There is a Better Way
+	</h1>
+</section>
+
+<section class="grey frp">
+	<p>
+		Instead of imperative programming, we can use a new paradigm to structure our code. 
+	</p>
+	<h1 class="emph">
+		Functional Reactive Programming
+	</h1>
+	<p>
+		Functional. Reactive. Programming. What on Earth is that? 
+	</p>
+	<p>
+		Well, we know to some degree what functional programming is. Functions don't have side-effects; there's no mutable state. It's a difficult way to program since the real world is mutable. Modelling things like user input becomes a nightmare. 
+	</p>
+	<p>
+		<em>Reactive</em> programming? What's that? Well, the best way to describe reactive programming is to think of a spreadsheet. Imagine three cells, A, B, and C. A is defined as the sum of B and C. Whenever B or C changes, A <em>reacts</em> to update itself. That's reactive programming: changes propagate throughout a system automatically.
+	</p>
+	<!-- TODO: Spreasheet image -->
+	<p>
+		Functional reactive programming is just a combination of functional and reactive paradigms. We model user input as a function that changes over time, abstracting away the idea of mutable state.
+	</p>
+	<p>
+		Functional reactive programming is the peanut butter and chocolate of programming paradigms. 
 	</p>
 </section>
+
+<section class="brown">
+	<p>
+		At the core of functional reactive programming is a <em>signal</em>. 
+	</p>
+</section>
+
+
+
+
+
+
+
+<footer>
+	<p>Copyright © 2014, Ash Furrow</p>
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+</footer>
