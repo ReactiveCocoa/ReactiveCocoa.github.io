@@ -85,7 +85,40 @@ title: ReactiveCocoa Presentation
 
 <section class="brown">
 	<p>
-		At the core of functional reactive programming is a <em>signal</em>. 
+		At the core of functional reactive programming is a <em>signal</em>. A signal is a rather abstract concept, and it's easier to describe what a signal does rather than what it is. A signal simply <em>sends values over time</em>. It sends values until it either completes, or errors out, at which point it stops sending values forever. A signal either completes or errors out, but not both.  
+	</p>
+	<p>
+		Signals have no sense of a "current value" or "past values" or "future values", they very simple. They just send values over time. Signals become useful when they're subscribed to or used with bindings, both cases of which we'll cover shortly. For now, it's important to understand that a signal can be <em>transformed</em>.
+	</p>
+	<p>
+		If I have a signal that sends numbers, and I want it to send strings instead, I can easily <em>transform</em> that signal with a <em>map</em>. A map is an <em>operator</em> that takes in a signal as a receiver, performs some operation on the values sent over that signal, and generates a new signal with the new, mapped values. 
+	</p>
+	<p>
+		A signal can be <em>subscribed to</em> in order to perform side-effects. A good example would be the signal emitted by a button when it's pressed; we can subscribe to that signal in order to perform side effects. A signal can also be <em>bound</em> to a property. For example, a signal that sends the location of a gesture recognizer can be mapped to a colour and bound to the background colour of a view. Then, when the user changes their tap possition, the view changes colour. 
+	</p>
+	<p>
+		Both of these examples, of subscription and binding, demonstrate that we can create a set up at the beginning of an application runtime and tell the code <em>what to do</em> without telling it <em>how to do it</em>. This is the value of functional reactive programming. 
+	</p>
+</section>
+
+<section class="light rac">
+	<img src="img/rac_logo.png" />
+	<p>
+		Signals in ReactiveCocoa are represented by the <code>RACSignal</code> class. They're created in one of two ways: either by wrapping a <code>@property</code> using KVO or using one of the ReactiveCocoa extensions in UIKit, like the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIControl%2BRACSignalSupport.h">button</a> or <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIGestureRecognizer%2BRACSignalSupport.h">gesture recognizer</a> I mentioned earlier. 
+	</p>
+	<p>
+		Signals always deal with <code>id</code>, never primitives. ReactiveCocoa will automatically take care of wrapping primitives, rects, and points in <code>NSNumber</code> objects for you. 
+	</p>
+	<p>
+		Another core concept in ReactiveCocoa is that of <em>derived state</em>. State is OK in ReactiveCocoa, as long as its bound to a signal. 
+	</p>
+	<p>
+		<h1 class="emph">
+			Getting Started is Easy
+		</h1>
+	</p>
+	<p>
+		I've put together a <a href="https://github.com/AshFurrow/FunctionalReactiveDemo">a simple demo</a> showing how to use signals, subscriptions, and bindings. I've also written a full-featured <a href="https://github.com/AshFurrow/C-41">application</a> which uses ReactiveCocoa. Finally, if you have any questions, check out the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a> repository; the team is very accessible for beginners, so feel free to open an issue and ask away. 
 	</p>
 </section>
 
@@ -93,9 +126,7 @@ title: ReactiveCocoa Presentation
 
 
 
-
-
 <footer>
-	<p>Copyright © 2014, Ash Furrow</p>
+	<p>Copyright © 2014, <a href="http://ashfurrow.com/">Ash Furrow</a></p>
 	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 </footer>

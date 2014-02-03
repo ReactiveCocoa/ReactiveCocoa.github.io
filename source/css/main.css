@@ -228,6 +228,14 @@ section.danger h1.emph {
     color: #E24B2C;
 }
 
+/* ReactiveCocoa */
+
+section.rac img {
+    display: block;
+    width: 100%;
+    max-width: 17em;
+    margin: 0 auto 0 auto;
+}
 
 
 
