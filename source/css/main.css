@@ -210,6 +210,36 @@ section.quote blockquote {
     font-weight: bold;
 }
 
+
+
+section.quote>blockquote:first-child:before {
+    content: '“';
+    font-family: serif;
+    font-size: 8em;
+    color: rgba(0,0,0,0.1);
+    display: block;
+    line-height: 0.75;
+    font-style: normal;
+}
+
+
+section.quote>blockquote:after {
+    content: '”';
+    font-family: serif;
+    font-size: 8em;
+    width: auto;
+    margin: 0;
+    color: rgba(0,0,0,0.1);
+    display: block;
+    line-height: 2;
+    padding: 0;
+    margin-bottom: -1em;
+    font-style: normal;
+    border: none;
+}
+
+
+
 section.quote p {
     text-align: center;
 }

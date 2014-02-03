@@ -17,23 +17,23 @@ title: ReactiveCocoa Presentation
 
 <section class="brown quote">
 	<blockquote>
-		“In the beginner’s mind there are many possibilities, <br />in the expert's mind there are few.”
+		In the beginner’s mind there are many possibilities, <br />in the expert's mind there are few.
 	</blockquote>
 	<p>— Shunryu Suzuki</p>	
 </section>
 
 <section class="grey history">
 	<p>
-		Long ago, when computer programming first came to be, machines had to be programmed quite manually. If the technician entered the correct sequence of machine codes in the correct order, then the resulting program behaviour would satisfy the business requirements. 
+		Long ago, when computer programming first came to be, machines had to be programmed quite manually. If the technician entered the correct sequence of machine codes in the correct order, then the resulting program behavior would satisfy the business requirements. 
 	</p>
 	<p>
-		Then we invented a high-level programming language: C. And once more, if the programmer wrote the correct sequence of instructions in the correct order, then the resulting program behaviour would satisfy the business requirements. 
+		Then we invented a high-level programming language: C. And once more, if the programmer wrote the correct sequence of instructions in the correct order, then the resulting program behavior would satisfy the business requirements. 
 	</p>
 	<h1 class="emph">
 		The 1980's: A Revolution in Software
 	</h1>
 	<p>
-		The 1980's saw the invention of a new way to write computer programs: object-oriented programming. The programmer would write code that manipulated the data belonging to re-usable "objects", and if the programmer wrote the correct instructions in the correct order, then the resulting program behaviour would satisfy the business requirements. 
+		The 1980's saw the invention of a new way to write computer programs: object-oriented programming. The programmer would write code that manipulated the data belonging to re-usable "objects", and if the programmer wrote the correct instructions in the correct order, then the resulting program behavior would satisfy the business requirements. 
 	</p>
 	<p>
 		After that, things got pretty boring.
@@ -48,7 +48,7 @@ title: ReactiveCocoa Presentation
 		Imperative Programming is Dangerous
 	</h1>
 	<p>
-		When we rely on hoping that the behaviour that emerges from a program is correct, and that reliance is based on nothing more than a programmer's correctness, then we can easily find ourselves in a <a href="http://en.wikipedia.org/wiki/Therac-25">sticky Situation</a>. We can try and mitigate the risks of imparative, hope-based programming with things like unit tests or integration tests, but why mitigate the risk when there's a better way? 
+		When we rely on hoping that the behavior that emerges from a program is correct, and that reliance is based on nothing more than a programmer's correctness, then we can easily find ourselves in a <a href="http://en.wikipedia.org/wiki/Therac-25">sticky Situation</a>. We can try and mitigate the risks of imparative, hope-based programming with things like unit tests or integration tests, but why mitigate the risk when there's a better way? 
 	</p>
 	<p>
 		Instead of telling a computer <em>how</em> to do it's job, why don't we just tell it <em>what</em> it's job is and let it figure the rest out? The bottom line is imperative programming is dangerous and relies too heavily on the infallibility of the programmer. 
@@ -94,7 +94,7 @@ title: ReactiveCocoa Presentation
 		If I have a signal that sends numbers, and I want it to send strings instead, I can easily <em>transform</em> that signal with a <em>map</em>. A map is an <em>operator</em> that takes in a signal as a receiver, performs some operation on the values sent over that signal, and generates a new signal with the new, mapped values. 
 	</p>
 	<p>
-		A signal can be <em>subscribed to</em> in order to perform side-effects. A good example would be the signal emitted by a button when it's pressed; we can subscribe to that signal in order to perform side effects. A signal can also be <em>bound</em> to a property. For example, a signal that sends the location of a gesture recognizer can be mapped to a colour and bound to the background colour of a view. Then, when the user changes their tap possition, the view changes colour. 
+		A signal can be <em>subscribed to</em> in order to perform side-effects. A good example would be the signal emitted by a button when it's pressed; we can subscribe to that signal in order to perform side effects. A signal can also be <em>bound</em> to a property. For example, a signal that sends the location of a gesture recognizer can be mapped to a color and bound to the background color of a view. Then, when the user changes their tap possition, the view changes color. 
 	</p>
 	<p>
 		Both of these examples, of subscription and binding, demonstrate that we can create a set up at the beginning of an application runtime and tell the code <em>what to do</em> without telling it <em>how to do it</em>. This is the value of functional reactive programming. 
