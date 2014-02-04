@@ -102,15 +102,29 @@ title: ReactiveCocoa Presentation
 </section>
 
 <section class="light rac">
+	<p>
+		ReactiveCocoa is an implementation of functional reactive programming
+		that is built on top of the Cocoa and CocoaTouch libraries that you're
+		already familiar with. 
+	</p>
 	<img src="img/rac_logo.png" />
 	<p>
-		Signals in ReactiveCocoa are represented by the <code>RACSignal</code> class. They're created in one of two ways: either by wrapping a <code>@property</code> using KVO or using one of the ReactiveCocoa extensions in UIKit, like the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIControl%2BRACSignalSupport.h">button</a> or <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIGestureRecognizer%2BRACSignalSupport.h">gesture recognizer</a> I mentioned earlier. 
+		Signals in ReactiveCocoa are concretely represented by the <code>RACSignal</code> class. They're created in one of two ways: either by wrapping a <code>@property</code> using KVO or using one of the ReactiveCocoa extensions in UIKit, like the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIControl%2BRACSignalSupport.h">button</a> or <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/UIGestureRecognizer%2BRACSignalSupport.h">gesture recognizer</a> I mentioned earlier. 
 	</p>
 	<p>
-		Signals always deal with <code>id</code>, never primitives. ReactiveCocoa will automatically take care of wrapping primitives, rects, and points in <code>NSValue</code> objects for you. 
+		Signals created using the <code>RACObserve</code> macro send new values
+		whenever the property that they're observing is changed. It completes 
+		when the object it is observing is deallocated. Signals created using 
+		the other method, of UIKit extensions, send values according to their 
+		individual implementations. For example, the button will send values 
+		based on the control event that the signal is initialized with, usually
+		<code>UIControlEventTouchUpInside</code>. 
 	</p>
 	<p>
-		Another core concept in ReactiveCocoa is that of <em>derived state</em>. State is OK in ReactiveCocoa, as long as its bound to a signal. 
+		Signals always deal with <code>id</code>, never primitives. ReactiveCocoa will automatically take care of wrapping primitives, rects, and points in <code>NSValue</code> objects for you. It's important when mapping values into new values to always return objects. 
+	</p>
+	<p>
+		Another core concept in ReactiveCocoa is that of <em>derived state</em>. State is OK in ReactiveCocoa, as long as its <em>bound</em> to a signal. This derived state means that you never explicitly set the value of a bound property, but rather rely on signal transformations to derive that state for you. 
 	</p>
 	<p>
 		<h1 class="emph">
@@ -118,7 +132,7 @@ title: ReactiveCocoa Presentation
 		</h1>
 	</p>
 	<p>
-		I've put together a <a href="https://github.com/AshFurrow/FunctionalReactiveDemo">a simple demo</a> showing how to use signals, subscriptions, and bindings. I've also written a full-featured <a href="https://github.com/AshFurrow/C-41">application</a> which uses ReactiveCocoa. You can also check out <a href="https://leanpub.com/iosfrp">my book</a>. Finally, if you have any questions, check out the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a> repository; the team is very accessible for beginners, so feel free to open an issue and ask away. 
+		I've put together a <a href="https://github.com/AshFurrow/FunctionalReactiveDemo">a simple demo</a> showing how to use signals, subscriptions, and bindings. I've also written a full-featured <a href="https://github.com/AshFurrow/C-41">application</a> which uses ReactiveCocoa. You can also check out <a href="https://leanpub.com/iosfrp">my book</a>. Finally, if you have any questions, check out the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a> repository; the team is very accessible to beginners, so feel free to open an issue and ask away. 
 	</p>
 </section>
 
