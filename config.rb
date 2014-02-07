@@ -76,9 +76,3 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  # Optional Settings
-  # deploy.remote = "custom-remote" # remote name or git url, default: origin
-  deploy.branch = "master" # default: gh-pages
-end
