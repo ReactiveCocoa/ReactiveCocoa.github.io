@@ -53,6 +53,8 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+page "/blog/feed.xml", layout: false
+
 activate :blog do |blog|
   # set options on blog
   blog.layout = "blog"
