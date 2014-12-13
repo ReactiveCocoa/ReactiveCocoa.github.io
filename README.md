@@ -11,6 +11,12 @@ To use:
 - Invoke the `middleman` command.
 - Navigate to `localhost:4567`.
 
+To create a blog post:
+
+- Type `middleman article "ARTICLE_NAME_HERE"`. 
+- Make sure to specify an `author` in the front matter of the blog file that's generated. 
+- Write your blog post in markdown. 
+
 Test locally. When you're ready, type `middleman build` and copy the contents of the `build` directory into the `master` branch. Submit a pull request. 
 
 ## License
