@@ -21,7 +21,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background-color: #e7f3ef;
+    background-color: #ffffff;
 }
 
 /*
@@ -97,10 +97,10 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     margin: 0;
     line-height: 1.5;
-    color: rgba(0,0,0,0.65);
+    color: rgba(0,0,0,0.6);
     font-size: 21px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -117,22 +117,87 @@ p {
     margin: 1em auto;
 }
 
-section { 
-    padding: 4em 1em; 
+/** Front Page Header **/
+header.front-page-header {
+  display: block;
+  width: auto;
+  padding: 5em 2em 3em 2em;
+  text-align: center;
 }
-section.light { 
-    background-color: #e7f3ef; 
-    color: #8C6429; 
+header.front-page-header > a.brand > img {
+  display: block;
+  width: 25em;
+  margin: 0 auto;
 }
-section.grey { 
-    background-color: #73726D; 
-    color: #e7f3ef; 
+header.front-page-header > span.soundbite {
+  display: block;
+  color: #778899;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 20em;
+  margin: 2em auto;
 }
-section.brown {
-    background-color: #8C6429; 
-    color: #E7F3EF; 
+header.front-page-header > a.philosophy-portal {
+  margin: 0 auto;
+  font-size: 1em;
 }
 
+/** Front Page Project List **/
+section.projects {
+  background-color: #EFF5FF;
+}
+
+section.project-list {
+  display: table;
+  border-spacing: 2em 2em;
+  margin: 0 auto;
+}
+
+section.project-list > section {
+  display: table-row;
+}
+
+section.project-list > section > h1 {
+  display: table-cell;
+  width: 1px;
+  white-space: nowrap;
+
+  vertical-align: middle;
+  text-align: right;
+  font-size: 1.35em;
+}
+
+section.project-list > section > h1 > a {
+  color: #3F567A;
+}
+
+section.project-list > section > p {
+  display: table-cell;
+  vertical-align: center;
+}
+
+span.language-tag {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.05em 0.3em;
+  font-size: 0.65em;
+  font-weight: bold;
+  margin-left: 0.15em;
+}
+
+span.objective-c {
+  color: #FFFFFF;
+  background-color: #2884F5;
+}
+
+span.swift {
+  color: #FFFFFF;
+  background-color: #FD7033;
+}
+
+/*
 h1 {
     font-weight: normal;
     line-height: 1.1;
@@ -144,14 +209,14 @@ h2 {
     font-weight: normal;
 }
 
-h1.emph { 
+h1.emph {
     color: #55C3DC;
 }
 
 h1.emph:before {
     content: '';
     display: block;
-    margin: 0 auto 1em auto; 
+    margin: 0 auto 1em auto;
     width: 3em;
     border-top: 2px solid rgba(0,0,0,0.1);
 }
@@ -159,7 +224,7 @@ h1.emph:before {
 h1.emph:after{
     content: '';
     display: block;
-    margin: 1em auto 0 auto; 
+    margin: 1em auto 0 auto;
     width: 3em;
     border-top: 2px solid rgba(0,0,0,0.1);
 }
@@ -170,38 +235,9 @@ hr {
     border: none;
     border-top: 2px solid rgba(0,0,0,0.1);
     margin: 4em auto;
-}
+}*/
 
 div.clear { clear: both; }
-
-
-/* TITLE */
-section.title {
-    background-color: #73726D;
-    padding-top: 0.5em;
-}
-
-section.title h1 {
-    text-align: left;
-    max-width: 7.5em;
-    margin: 0.5em auto 1em auto;
-    color: #55C3DC;
-    font-size: 4em;
-    line-height: 1;
-}
-
-section.title h1 span {
-    color: rgba(255,255,255,0.2);
-}
-
-section.title p, section.title p a {
-    color: #E7F3EF;
-    font-style: italic;
-}
-
-section.title p a {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
 
 /* quote */
 
@@ -241,8 +277,8 @@ section.quote p {
 
 /* foreword */
 
-section.foreword { 
-    text-align: center; font-size: 0.9em; 
+section.foreword {
+    text-align: center; font-size: 0.9em;
 }
 
 section.foreward p a {
@@ -262,34 +298,14 @@ section.rac img {
     margin: 0 auto 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******
 FOOTER
 *******/
 
 footer {
-    background-color: #73726D;
     font-size: 0.8em;
     padding: 3em 1em;
-    color: #E7F3EF;
+    color: #787878;
     text-align: center;
 }
 
@@ -298,38 +314,44 @@ footer p {
 }
 
 footer a {
-    color: #55C3DC;
-    border-bottom: 1px solid #55C3DC;
+    color: #4F6B97;
+    border-bottom: 1px solid #c7c7c7;
 }
 
 /*
 Media Queries
 */
 
-@media only screen and (max-width: 55em) {  
-    body { 
-        font-size: 18px; 
-    } 
+@media only screen and (max-width: 55em) {
+    body {
+        font-size: 18px;
+    }
 }
-@media only screen and (max-width: 45em) { 
-    section.title h1 { 
-        font-size: 3em; 
+@media only screen and (max-width: 45em) {
+    section.title h1 {
+        font-size: 3em;
+    }
+    header.front-page-header > a.brand > img {
+      width: 300px !important;
     }
 }
 @media only screen and (max-width: 30em) {
-    section { 
-        padding-top: 2em; padding-bottom: 2em; 
+    section {
+        padding-top: 2em; padding-bottom: 2em;
     }
-    h1.emph { 
-        font-size: 1.8em; 
+    h1.emph {
+        font-size: 1.8em;
     }
-    section.title h1 { 
-        font-size: 2em; 
+    section.title h1 {
+        font-size: 2em;
     }
-    p { 
-        -webkit-hyphens: auto; 
-        -moz-hyphens: auto; 
-        hyphens: auto; 
+    p {
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+    header.front-page-header > a.brand > img {
+      width: 300px !important;
     }
 }
 
