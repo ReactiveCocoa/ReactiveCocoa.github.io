@@ -22,6 +22,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     background-color: #ffffff;
+    min-width: 320px;
 }
 
 /*
@@ -116,12 +117,12 @@ a {
 header.front-page-header {
   display: block;
   width: auto;
-  padding: 3em 2em 3em 2em;
+  padding: 3em 1em;
   text-align: center;
 }
 header.front-page-header > a.brand > img {
   display: block;
-  width: 70%;
+  width: 100%;
   max-width: 35em;
   margin: 0 auto;
 }
@@ -379,7 +380,7 @@ Media Queries
         font-size: 3em;
     }
     header.front-page-header > a.brand > img {
-      width: 90%;
+      width: 100%;
     }
     header.front-page-header > span.soundbite {
       font-size: 1.5em;
@@ -391,10 +392,11 @@ Media Queries
       display: block;
       white-space: nowrap;
 
-      width: intrinsic;
+      width: -webkit-fit-content;
       width: fit-content;
+
+      padding: 0 0 2em 0;
       margin: 0 auto;
-      padding: 0 2em 2em 2em;
     }
     section.project-list > section {
       display: block;
@@ -425,9 +427,6 @@ Media Queries
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         hyphens: auto;
-    }
-    header.front-page-header > a.brand > img {
-      width: 300px !important;
     }
 }
 
