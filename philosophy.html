@@ -22,193 +22,191 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <section class="title">
-	<h1>
-		ReactiveCocoa
-	</h1>
-	<p>
+        <header class="front-page-header">
+	<span class="soundbite">
 		An introduction to functional reactive programming
-	</p>
-</section>
+	</span>
+	<a href="index.html" class="backward">Portal</a>
+</header>
 
 <section class="foreword light">
 	<p>
-		This is an interpretation of a <a 
-		href="http://mdevcon.com/posts/2014/01/09/ash-furrow/">talk</a> from <a 
-		href="http://mdevcon.com">mdevcon</a> 2014. It is heavily inspired by 
+		This is an interpretation of a <a
+		href="http://mdevcon.com/posts/2014/01/09/ash-furrow/">talk</a> from <a
+		href="http://mdevcon.com">mdevcon</a> 2014. It is heavily inspired by
 		<a href="http://frankchimero.com/what-screens-want/">What Screens Want
-		</a> by Frank Chimero and the case studies at <a 
-		href="http://teehanlax.com">Teehan+Lax</a>. 
+		</a> by Frank Chimero and the case studies at <a
+		href="http://teehanlax.com">Teehan+Lax</a>.
 	</p>
 </section>
 
-<section class="brown quote">
+<section class="quote">
 	<blockquote>
 		In the beginner’s mind there are many possibilities, <br />
 		in the expert's mind there are few.
 	</blockquote>
-	<p>— Shunryu Suzuki</p>	
+	<p>— Shunryu Suzuki</p>
 </section>
 
-<section class="grey history">
+<section class="content">
 	<p>
 		Long ago, when computer programming first came to be, machines had to be
-		programmed quite manually. If the technician entered the correct 
-		sequence of machine codes in the correct order, then the resulting 
-		program behavior would satisfy the business requirements. 
+		programmed quite manually. If the technician entered the correct
+		sequence of machine codes in the correct order, then the resulting
+		program behavior would satisfy the business requirements.
 	</p>
 	<p>
-		Then we invented a higher-level programming language: C. And once more, 
-		if the programmer wrote the correct sequence of instructions in the 
-		correct order, then the resulting program behavior would satisfy the 
-		business requirements. 
+		Then we invented a higher-level programming language: C. And once more,
+		if the programmer wrote the correct sequence of instructions in the
+		correct order, then the resulting program behavior would satisfy the
+		business requirements.
 	</p>
 	<h1 class="emph">
 		The 1980's: A Revolution in Software
 	</h1>
 	<p>
-		The 1980's saw the invention of a new way to write computer programs: 
-		object-oriented programming. The programmer would write code that 
-		manipulated the data belonging to re-usable "objects", and if the 
+		The 1980's saw the invention of a new way to write computer programs:
+		object-oriented programming. The programmer would write code that
+		manipulated the data belonging to re-usable "objects", and if the
 		programmer wrote the correct instructions in the correct order, then the
-		resulting program behavior would satisfy the business requirements. 
+		resulting program behavior would satisfy the business requirements.
 	</p>
 	<p>
 		After that, things got pretty boring.
 	</p>
 </section>
 
-<section class="light danger">
+<section class="content">
 	<p>
-		Most modern programming today is <em>basically imperative</em>, meaning 
-		it models the traditional fetch-execute cycle of a CPU. Perform and 
-		instruction, fetch the next one. Perform that one, and so on. For 
-		decades, programmers have had to mould their brains to fit the paradigm 
-		of the CPU. 
+		Most modern programming today is <em>basically imperative</em>, meaning
+		it models the traditional fetch-execute cycle of a CPU. Perform an
+		instruction, fetch the next one. Perform that one, and so on. For
+		decades, programmers have had to mould their brains to fit the paradigm
+		of the CPU.
 	</p>
-	<h1 class="emph">
+	<h1 class="emph alert">
 		Imperative Programming is Dangerous
 	</h1>
 	<p>
-		When we rely on hoping that the behavior that emerges from a program is 
-		correct, and that reliance is based on nothing more than a programmer's 
-		correctness, then we can easily find ourselves in a <a 
-		href="http://en.wikipedia.org/wiki/Therac-25">sticky situation</a>. We 
+		When we rely on hoping that the behavior that emerges from a program is
+		correct, and that reliance is based on nothing more than a programmer's
+		correctness, then we can easily find ourselves in a <a
+		href="http://en.wikipedia.org/wiki/Therac-25">sticky situation</a>. We
 		can try and mitigate the costs of imperative programming with things
 		like unit tests or integration tests, but why mitigate the costs when
 		there's a better way?
 	</p>
 	<p>
-		Instead of telling a computer <em>how</em> to do its job, why don't we 
-		just tell it <em>what</em> it's job is and let it figure the rest out? 
+		Instead of telling a computer <em>how</em> to do its job, why don't we
+		just tell it <em>what</em> its job is and let it figure the rest out?
 		The bottom line is imperative programming is error-prone and relies too
-		heavily on the infallibility of the programmer. 
+		heavily on the infallibility of the programmer.
 	</p>
 	<h1 class="emph">
 		There is a Better Way
 	</h1>
 </section>
 
-<section class="grey frp">
+<section class="content">
 	<p>
-		Instead of imperative programming, we can use a new paradigm to 
-		structure our code. 
+		Instead of imperative programming, we can use a new paradigm to
+		structure our code.
 	</p>
 	<h1 class="emph">
 		Functional Reactive Programming
 	</h1>
 	<p>
-		Functional. Reactive. Programming. What on Earth is that? 
+		Functional. Reactive. Programming. What on Earth is that?
 	</p>
 	<p>
-		Well, we know to some degree what functional programming is. Functions 
-		don't have side-effects; there's no mutable state. It's a difficult way 
-		to program since the real world is mutable. Modelling things like user 
-		input becomes a nightmare. 
+		Well, we know to some degree what functional programming is. Functions
+		don't have side-effects; there's no mutable state. It's a difficult way
+		to program since the real world is mutable. Modelling things like user
+		input becomes a nightmare.
 	</p>
 	<p>
-		<em>Reactive</em> programming? What's that? Well, the best way to 
-		describe reactive programming is to think of a spreadsheet. Imagine 
-		three cells, A, B, and C. A is defined as the sum of B and C. Whenever B 
-		or C changes, A <em>reacts</em> to update itself. That's reactive 
+		<em>Reactive</em> programming? What's that? Well, the best way to
+		describe reactive programming is to think of a spreadsheet. Imagine
+		three cells, A, B, and C. A is defined as the sum of B and C. Whenever B
+		or C changes, A <em>reacts</em> to update itself. That's reactive
 		programming: changes propagate throughout a system automatically.
 	</p>
 	<!-- TODO: Spreasheet image -->
 	<p>
-		Functional reactive programming is just a combination of functional and 
-		reactive paradigms. We model user input as a function that changes over 
+		Functional reactive programming is just a combination of functional and
+		reactive paradigms. We model user input as a function that changes over
 		time, abstracting away the idea of mutable state.
 	</p>
 	<p>
-		Functional reactive programming is the peanut butter and chocolate of 
-		programming paradigms. 
+		Functional reactive programming is the peanut butter and chocolate of
+		programming paradigms.
 	</p>
 </section>
 
-<section class="brown">
+<section class="content">
 	<p>
-		At the core of functional reactive programming is a <em>signal</em>. A 
-		signal is a rather abstract concept, and it's easier to describe what a 
-		signal does rather than what it is. A signal simply <em>sends values 
-		over time</em>. It sends values until it either completes, or errors 
-		out, at which point it stops sending values forever. A signal either 
-		completes or errors out, but not both.  
+		At the core of functional reactive programming is a <em>signal</em>. A
+		signal is a rather abstract concept, and it's easier to describe what a
+		signal does rather than what it is. A signal simply <em>sends values
+		over time</em>. It sends values until it either completes, or errors
+		out, at which point it stops sending values forever. A signal either
+		completes or errors out, but not both.
 	</p>
 	<p>
-		Signals have no sense of a "current value" or "past values" or "future 
-		values", they are very simple. They just send values over time. Signals 
-		become useful when they're subscribed to or used with bindings, both 
-		cases of which we'll cover shortly. For now, it's important to 
+		Signals have no sense of a "current value" or "past values" or "future
+		values", they are very simple. They just send values over time. Signals
+		become useful when they're subscribed to or used with bindings, both
+		cases of which we'll cover shortly. For now, it's important to
 		understand that a signal can be <em>transformed</em>.
 	</p>
 	<p>
-		If I have a signal that sends numbers, and I want it to send strings 
-		instead, I can easily <em>transform</em> that signal with a 
-		<em>map</em>. A map is an <em>operator</em> that takes in a signal as a 
-		receiver, performs some operation on the values sent over that signal, 
-		and generates a new signal with the new, mapped values. 
+		If I have a signal that sends numbers, and I want it to send strings
+		instead, I can easily <em>transform</em> that signal with a
+		<em>map</em>. A map is an <em>operator</em> that takes in a signal as a
+		receiver, performs some operation on the values sent over that signal,
+		and generates a new signal with the new, mapped values.
 	</p>
 	<p>
-		A signal can be <em>subscribed to</em> in order to perform side-effects. 
-		A good example would be the signal emitted by a button when it's 
-		pressed; we can subscribe to that signal in order to perform side 
-		effects. A signal can also be <em>bound</em> to a property. For example, 
-		a signal that sends the location of a gesture recognizer can be mapped 
-		to a color and bound to the background color of a view. Then, when the 
-		user changes their tap position, the view changes color. 
+		A signal can be <em>subscribed to</em> in order to perform side-effects.
+		A good example would be the signal emitted by a button when it's
+		pressed; we can subscribe to that signal in order to perform side
+		effects. A signal can also be <em>bound</em> to a property. For example,
+		a signal that sends the location of a gesture recognizer can be mapped
+		to a color and bound to the background color of a view. Then, when the
+		user changes their tap position, the view changes color.
 	</p>
 	<p>
-		Both of these examples, of subscription and binding, demonstrate that we 
-		can create a set up at the beginning of an application runtime and tell 
-		the code <em>what to do</em> without telling it <em>how to do it</em>. 
-		This is the value of functional reactive programming. 
+		Both of these examples, of subscription and binding, demonstrate that we
+		can create a set up at the beginning of an application runtime and tell
+		the code <em>what to do</em> without telling it <em>how to do it</em>.
+		This is the value of functional reactive programming.
 	</p>
 	<p>
-		Another core concept in functional reactive programming is that of 
-		<em>derived state</em>. State is OK in ReactiveCocoa, as long as its 
-		<em>bound</em> to a signal. This derived state means that you never 
-		explicitly set the value of a bound property, but rather rely on signal 
-		transformations to derive that state for you. 
+		Another core concept in functional reactive programming is that of
+		<em>derived state</em>. State is OK in ReactiveCocoa, as long as its
+		<em>bound</em> to a signal. This derived state means that you never
+		explicitly set the value of a bound property, but rather rely on signal
+		transformations to derive that state for you.
 	</p>
 </section>
 
-<section class="light rac">
+<section class="rac content">
 	<p>
 		ReactiveCocoa is an implementation of functional reactive programming
 		that is built on top of the Cocoa and CocoaTouch libraries that you're
-		already familiar with. 
+		already familiar with.
 	</p>
-	<img src="img/rac_logo.png" />
+	<a href="index.html"><img src="img/logo.png" /></a>
+</section>
+<section class="content">
+	<h1 class="emph">
+		Getting Started is Easy
+	</h1>
 	<p>
-		<h1 class="emph">
-			Getting Started is Easy
-		</h1>
-	</p>
-	<p>
-		There are many resources available for you to explore the world of 
-		ReactiveCocoa. Check out the <a 
+		There are many resources available for you to explore the world of
+		ReactiveCocoa. Check out the <a
 		href="https://github.com/ReactiveCocoa/ReactiveCocoa#reactivecocoa">
-		ReactiveCocoa README</a> for a list of resources. 
+		ReactiveCocoa README</a> for a list of resources.
 	</p>
 </section>
 

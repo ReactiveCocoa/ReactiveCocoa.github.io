@@ -22,7 +22,8 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background-color: #e7f3ef;
+    background-color: #ffffff;
+    min-width: 320px;
 }
 
 /*
@@ -98,160 +99,244 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     margin: 0;
-    line-height: 1.5;
-    color: rgba(0,0,0,0.65);
+    line-height: 1.0;
+    color: rgba(0,0,0,0.6);
     font-size: 21px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
 a {
-    color: rgba(0,0,0,0.5);
+    color: #4F6B97;
     text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid #C7C7C7;
 }
 
-p {
-    max-width: 30em;
-    margin: 1em auto;
+/** Front Page Header **/
+header.front-page-header {
+  display: block;
+  width: auto;
+  padding: 3em 1em;
+  text-align: center;
+}
+header.front-page-header > a.brand > img {
+  display: block;
+  width: 100%;
+  max-width: 35em;
+  margin: 0 auto;
+}
+header.front-page-header > span.soundbite {
+  display: block;
+  color: #778899;
+  font-size: 1.7em;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 20em;
+  margin: 2em auto;
+}
+header.front-page-header > a {
+  margin: 0 auto;
+  font-size: 1em;
+}
+a.forward:after {
+  content: " »";
+}
+a.backward:before {
+  content: "« ";
 }
 
-section { 
-    padding: 4em 1em; 
+/** Front Page Content **/
+section.front-page-content {
+  display: block;
+  width: auto;
+  padding: 2em 2em 2em 2em;
+  text-align: center;
 }
-section.light { 
-    background-color: #e7f3ef; 
-    color: #8C6429; 
+section.front-page-content > span.soundbite {
+  display: block;
+  color: #778899;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 40em;
+  margin: 2em auto 0.5em auto;
 }
-section.grey { 
-    background-color: #73726D; 
-    color: #e7f3ef; 
-}
-section.brown {
-    background-color: #8C6429; 
-    color: #E7F3EF; 
-}
-
-h1 {
-    font-weight: normal;
-    line-height: 1.1;
-    font-size: 2.5em;
-    text-align: center;
-}
-
-h2 {
-    font-weight: normal;
+section.front-page-content > a {
+  margin: 0 auto;
+  font-size: 1em;
 }
 
-h1.emph { 
-    color: #55C3DC;
+/** Front Page **/
+section.projects {
+  background-color: #EFF5FF;
 }
 
-h1.emph:before {
-    content: '';
-    display: block;
-    margin: 0 auto 1em auto; 
-    width: 3em;
-    border-top: 2px solid rgba(0,0,0,0.1);
+section.project-list {
+  display: table;
+  border-spacing: 1em 3em;
+
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
 }
 
-h1.emph:after{
-    content: '';
-    display: block;
-    margin: 1em auto 0 auto; 
-    width: 3em;
-    border-top: 2px solid rgba(0,0,0,0.1);
+section.project-list > section {
+  display: table-row;
+  height: 75px;
 }
 
-hr {
-    width: 33%;
-    max-width: 15em;
-    border: none;
-    border-top: 2px solid rgba(0,0,0,0.1);
-    margin: 4em auto;
+section.project-list > section > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section.project-list > section > h1 {
+  text-align: right;
+  font-size: 1.35em;
+  font-weight: bold;
+
+  padding: 0;
+  margin: 0;
+}
+
+section.project-list > section > h1 > a {
+  color: #3F567A;
+}
+
+section.project-list > section > p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+section.project-list > section > ul {
+  line-height: 1.5;
+  list-style: none;
+  white-space: nowrap;
+
+  padding: 0;
+  margin: 0;
+}
+
+section.project-list > section > ul > li {
+  font-size: 0.9em;
+}
+
+section.project-list > section > ul > li > a:after {
+  content: " »";
+}
+
+span.tag {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.2em 0.3em;
+  font-size: 0.65em;
+  font-weight: bold;
+  margin-left: 0.15em;
+  line-height: 1.0;
+}
+
+span.objective-c {
+  color: #FFFFFF;
+  background-color: #779CAB;
+}
+
+span.objective-c:before {
+  content: "objective-c";
+}
+
+span.swift {
+  color: #FFFFFF;
+  background-color: #FF8552;
+}
+
+span.swift:before {
+  content: "swift";
+}
+
+span.carthage {
+  color: #FFFFFF;
+  background-color: #72B01D;
+}
+
+span.carthage:before {
+  content: "carthage";
+}
+
+span.cocoapods {
+  color: #FFFFFF;
+  background-color: rgb(245, 0, 0);
+}
+
+span.cocoapods:before {
+  content: "cocoapods";
 }
 
 div.clear { clear: both; }
 
+/* Sections in content pages */
 
-/* TITLE */
-section.title {
-    background-color: #73726D;
-    padding-top: 0.5em;
+section.content {
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-section.title h1 {
-    text-align: left;
-    max-width: 7.5em;
-    margin: 0.5em auto 1em auto;
-    color: #55C3DC;
-    font-size: 4em;
-    line-height: 1;
+section.content > p {
+  line-height: 2.0;
+  max-width: 30em;
+  margin: 1em auto;
+  text-align: justify;
 }
 
-section.title h1 span {
-    color: rgba(255,255,255,0.2);
+section.content > h1.emph {
+  text-align: left;
+  font-size: 1.50em;
+  font-weight: normal;
+  padding: 1.5em 0;
+  color: #778899;
 }
 
-section.title p, section.title p a {
-    color: #E7F3EF;
-    font-style: italic;
+section.content > h1.alert {
+  color: #FE5F55 !important;
 }
 
-section.title p a {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+section.quote {
+    padding-bottom: 1em;
+    max-width: 40em;
+    margin: 0 auto;
 }
-
-/* quote */
 
 section.quote blockquote {
-    font-family: serif;
     text-align: center;
     font-weight: bold;
-}
-
-section.quote>blockquote:first-child:before {
-    content: '“';
-    font-family: serif;
-    font-size: 8em;
-    color: rgba(0,0,0,0.1);
-    display: block;
+    font-style: italic;
+    background-color: #efefef;
+    padding: 3em 0em;
     line-height: 1.3;
-    font-style: normal;
-}
-section.quote>blockquote:after {
-    content: '”';
-    font-family: serif;
-    font-size: 8em;
-    width: auto;
-    margin: 0;
-    color: rgba(0,0,0,0.1);
-    display: block;
-    line-height: 2;
-    padding: 0;
-    margin-bottom: -0.5em;
-    font-style: normal;
-    border: none;
 }
 
 section.quote p {
     text-align: center;
+    font-style: italic;
 }
 
 /* foreword */
 
-section.foreword { 
-    text-align: center; font-size: 0.9em; 
+section.foreword {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.5;
+    padding-bottom: 1em;
+    max-width: 30em;
+    margin: 0 auto;
 }
 
 section.foreward p a {
     color: #73726D;
-}
-
-section.danger h1.emph {
-    color: #E24B2C;
 }
 
 /* ReactiveCocoa */
@@ -260,77 +345,89 @@ section.rac img {
     display: block;
     width: 100%;
     max-width: 17em;
-    margin: 0 auto 0 auto;
+    margin: 2.5em auto 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /******
 FOOTER
 *******/
 
 footer {
-    background-color: #73726D;
     font-size: 0.8em;
     padding: 3em 1em;
-    color: #E7F3EF;
+    color: #787878;
     text-align: center;
 }
 
 footer p {
-    max-width: 36.5em;
 }
 
 footer a {
-    color: #55C3DC;
-    border-bottom: 1px solid #55C3DC;
+    color: #4F6B97;
+    border-bottom: 1px solid #c7c7c7;
 }
 
 /*
 Media Queries
 */
 
-@media only screen and (max-width: 55em) {  
-    body { 
-        font-size: 18px; 
-    } 
+@media only screen and (max-width: 55em) {
+    body {
+        font-size: 18px;
+    }
 }
-@media only screen and (max-width: 45em) { 
-    section.title h1 { 
-        font-size: 3em; 
+@media only screen and (max-width: 45em) {
+    section.title h1 {
+        font-size: 3em;
+    }
+    header.front-page-header > a.brand > img {
+      width: 100%;
+    }
+    header.front-page-header > span.soundbite {
+      font-size: 1.5em;
+    }
+    section.front-page-content > span.soundbite {
+      font-size: 1.2em;
+    }
+    section.project-list {
+      display: block;
+      white-space: nowrap;
+
+      width: -webkit-fit-content;
+      width: fit-content;
+
+      padding: 0 0 2em 0;
+      margin: 0 auto;
+    }
+    section.project-list > section {
+      display: block;
+      height: auto;
+      padding: 2em 0 0 0;
+    }
+    section.project-list > section > * {
+      display: block;
+    }
+    section.project-list > section > h1 {
+      text-align: left;
+    }
+    section.project-list > section > p {
+      padding: 1em 0;
+    }
+    section.project-list > section > ul > li {
+      font-size: 1.0em;
     }
 }
 @media only screen and (max-width: 30em) {
-    section { 
-        padding-top: 2em; padding-bottom: 2em; 
+    h1.emph {
+        font-size: 1.8em;
     }
-    h1.emph { 
-        font-size: 1.8em; 
+    section.title h1 {
+        font-size: 2em;
     }
-    section.title h1 { 
-        font-size: 2em; 
-    }
-    p { 
-        -webkit-hyphens: auto; 
-        -moz-hyphens: auto; 
-        hyphens: auto; 
+    p {
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
     }
 }
 
