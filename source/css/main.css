@@ -171,61 +171,135 @@ section.front-page-content > a {
 
 /** Front Page **/
 section.projects {
+  display: block;
+  text-align: center;
+
+  padding: 1.5em 0;
+
   background-color: #EFF5FF;
 }
 
-section.project-list {
-  display: table;
-  border-spacing: 1em 3em;
-
-  margin: 0 auto;
-  width: auto;
-  max-width: 60em;
+section.projects > h1 {
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #A7ADB2;
 }
 
-section.project-list > section {
-  display: table-row;
-  height: 75px;
+section.projects > ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
-section.project-list > section > * {
-  display: table-cell;
-  vertical-align: middle;
+section.projects > ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
 }
 
-section.project-list > section > h1 {
-  text-align: right;
-  font-size: 1.35em;
+section.projects > ul > li {
+  display: block;
+  position: relative;
+  float: left;
+
+  border-radius: 50%;
+
+  width: 5em;
+  height: 5em;
+
+  margin: 0 0.75em;
+}
+
+section.projects > ul > li > a {
+  display: block;
+
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.projects > ul > li:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+  line-height: 5em;
+
+  color: #FFFFFF;
+
+  font-size: 1em;
   font-weight: bold;
 
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-section.project-list > section > h1 > a {
-  color: #3F567A;
+section.projects > ul > li.objc {
+  background-color: #5D737E;
 }
 
-section.project-list > section > p {
-  line-height: 1.5;
-  margin: 0;
+section.projects > ul > li.objc:hover {
+  background-color: #404E56;
 }
 
-section.project-list > section > ul {
-  line-height: 1.5;
-  list-style: none;
-  white-space: nowrap;
-
-  padding: 0;
-  margin: 0;
+section.projects > ul > li.objc:after {
+  content: "OBJC";
 }
 
-section.project-list > section > ul > li {
-  font-size: 0.9em;
+section.projects > ul > li.objcbridge {
+  background-color: #779CAB;
 }
 
-section.project-list > section > ul > li > a:after {
-  content: " »";
+section.projects > ul > li.objcbridge:hover {
+  background-color: #5C7884;
+}
+
+section.projects > ul > li.objcbridge:after {
+  content: "BRIDGE";
+}
+
+section.projects > ul > li.swift {
+  background-color: #FF8552;
+}
+
+section.projects > ul > li.swift:hover {
+  background-color: #D87145;
+}
+
+section.projects > ul > li.swift:after {
+  content: "SWIFT";
+}
+
+section.projects > ul > li.cocoa {
+  background-color: #C95136;
+}
+
+section.projects > ul > li.cocoa:hover {
+  background-color: #A3412C;
+}
+
+section.projects > ul > li.cocoa:after {
+  content: "COCOA";
 }
 
 span.tag {
@@ -244,7 +318,7 @@ span.objective-c {
 }
 
 span.objective-c:before {
-  content: "objective-c";
+  content: "objc";
 }
 
 span.swift {
