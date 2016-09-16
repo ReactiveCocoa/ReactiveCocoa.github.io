@@ -129,11 +129,11 @@ header.front-page-header > a.brand > img {
 header.front-page-header > span.soundbite {
   display: block;
   color: #778899;
-  font-size: 1.7em;
+  font-size: 1.45em;
   font-weight: normal;
   text-align: center;
   line-height: 1.2;
-  max-width: 20em;
+  max-width: 22em;
   margin: 2em auto;
 }
 header.front-page-header > a {
@@ -174,7 +174,7 @@ section.projects {
   display: block;
   text-align: center;
 
-  padding: 1.5em 0;
+  padding: 2em 0;
 
   background-color: #EFF5FF;
 }
@@ -254,7 +254,7 @@ section.projects > ul > li:after {
   text-transform: uppercase;
 }
 
-section.projects > ul > li.objc {
+.objc {
   background-color: #5D737E;
 }
 
@@ -266,7 +266,7 @@ section.projects > ul > li.objc:after {
   content: "OBJC";
 }
 
-section.projects > ul > li.objcbridge {
+.objcbridge {
   background-color: #779CAB;
 }
 
@@ -278,7 +278,7 @@ section.projects > ul > li.objcbridge:after {
   content: "BRIDGE";
 }
 
-section.projects > ul > li.swift {
+.swift {
   background-color: #FF8552;
 }
 
@@ -290,7 +290,7 @@ section.projects > ul > li.swift:after {
   content: "SWIFT";
 }
 
-section.projects > ul > li.cocoa {
+.cocoa {
   background-color: #C95136;
 }
 
@@ -302,53 +302,36 @@ section.projects > ul > li.cocoa:after {
   content: "COCOA";
 }
 
-span.tag {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 0.2em 0.3em;
-  font-size: 0.65em;
+/* project descriptions */
+section.project-description > article {
+  display: block;
+}
+
+section.project-description > article > div {
+  display: block;
+  position: relative;
+
+  width: auto;
+  max-width: 30em;
+
+  margin: 0 auto;
+  padding: 1.2em;
+}
+
+section.project-description > article > div > p.description {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+section.project-description > article > div > p.description > span.project-name {
   font-weight: bold;
-  margin-left: 0.15em;
-  line-height: 1.0;
 }
 
-span.objective-c {
-  color: #FFFFFF;
-  background-color: #779CAB;
+section.project-description > article > div > p.notes {
+  margin: 1em 0 0 0;
+  color: #E7E7E7;
+  font-size: 0.7em;
 }
-
-span.objective-c:before {
-  content: "objc";
-}
-
-span.swift {
-  color: #FFFFFF;
-  background-color: #FF8552;
-}
-
-span.swift:before {
-  content: "swift";
-}
-
-span.carthage {
-  color: #FFFFFF;
-  background-color: #72B01D;
-}
-
-span.carthage:before {
-  content: "carthage";
-}
-
-span.cocoapods {
-  color: #FFFFFF;
-  background-color: rgb(245, 0, 0);
-}
-
-span.cocoapods:before {
-  content: "cocoapods";
-}
-
-div.clear { clear: both; }
 
 /* Sections in content pages */
 
