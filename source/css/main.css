@@ -129,11 +129,11 @@ header.front-page-header > a.brand > img {
 header.front-page-header > span.soundbite {
   display: block;
   color: #778899;
-  font-size: 1.7em;
+  font-size: 1.45em;
   font-weight: normal;
   text-align: center;
   line-height: 1.2;
-  max-width: 20em;
+  max-width: 22em;
   margin: 2em auto;
 }
 header.front-page-header > a {
@@ -171,110 +171,167 @@ section.front-page-content > a {
 
 /** Front Page **/
 section.projects {
+  display: block;
+  text-align: center;
+
+  padding: 2em 0;
+
   background-color: #EFF5FF;
 }
 
-section.project-list {
-  display: table;
-  border-spacing: 1em 3em;
-
-  margin: 0 auto;
-  width: auto;
-  max-width: 60em;
+section.projects > h1 {
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #A7ADB2;
 }
 
-section.project-list > section {
-  display: table-row;
-  height: 75px;
+section.projects > ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
-section.project-list > section > * {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-section.project-list > section > h1 {
-  text-align: right;
-  font-size: 1.35em;
-  font-weight: bold;
-
-  padding: 0;
-  margin: 0;
-}
-
-section.project-list > section > h1 > a {
-  color: #3F567A;
-}
-
-section.project-list > section > p {
-  line-height: 1.5;
-  margin: 0;
-}
-
-section.project-list > section > ul {
-  line-height: 1.5;
-  list-style: none;
-  white-space: nowrap;
-
-  padding: 0;
-  margin: 0;
-}
-
-section.project-list > section > ul > li {
-  font-size: 0.9em;
-}
-
-section.project-list > section > ul > li > a:after {
-  content: " »";
-}
-
-span.tag {
+section.projects > ul {
   display: inline-block;
-  text-transform: uppercase;
-  padding: 0.2em 0.3em;
-  font-size: 0.65em;
-  font-weight: bold;
-  margin-left: 0.15em;
-  line-height: 1.0;
+  list-style: none;
+  padding: 0;
 }
 
-span.objective-c {
+section.projects > ul > li {
+  display: block;
+  position: relative;
+  float: left;
+
+  border-radius: 50%;
+
+  width: 5em;
+  height: 5em;
+
+  margin: 0 0.75em;
+}
+
+section.projects > ul > li > a {
+  display: block;
+
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.projects > ul > li:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+  line-height: 5em;
+
   color: #FFFFFF;
+
+  font-size: 1em;
+  font-weight: bold;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.objc {
+  background-color: #5D737E;
+}
+
+section.projects > ul > li.objc:hover {
+  background-color: #404E56;
+}
+
+section.projects > ul > li.objc:after {
+  content: "OBJC";
+}
+
+.objcbridge {
   background-color: #779CAB;
 }
 
-span.objective-c:before {
-  content: "objective-c";
+section.projects > ul > li.objcbridge:hover {
+  background-color: #5C7884;
 }
 
-span.swift {
-  color: #FFFFFF;
+section.projects > ul > li.objcbridge:after {
+  content: "BRIDGE";
+}
+
+.swift {
   background-color: #FF8552;
 }
 
-span.swift:before {
-  content: "swift";
+section.projects > ul > li.swift:hover {
+  background-color: #D87145;
 }
 
-span.carthage {
+section.projects > ul > li.swift:after {
+  content: "SWIFT";
+}
+
+.cocoa {
+  background-color: #C95136;
+}
+
+section.projects > ul > li.cocoa:hover {
+  background-color: #A3412C;
+}
+
+section.projects > ul > li.cocoa:after {
+  content: "COCOA";
+}
+
+/* project descriptions */
+section.project-description > article {
+  display: block;
+}
+
+section.project-description > article > div {
+  display: block;
+  position: relative;
+
+  width: auto;
+  max-width: 30em;
+
+  margin: 0 auto;
+  padding: 1.2em;
+}
+
+section.project-description > article > div > p.description {
+  margin: 0;
   color: #FFFFFF;
-  background-color: #72B01D;
 }
 
-span.carthage:before {
-  content: "carthage";
+section.project-description > article > div > p.description > span.project-name {
+  font-weight: bold;
 }
 
-span.cocoapods {
-  color: #FFFFFF;
-  background-color: rgb(245, 0, 0);
+section.project-description > article > div > p.notes {
+  margin: 1em 0 0 0;
+  color: #E7E7E7;
+  font-size: 0.7em;
 }
-
-span.cocoapods:before {
-  content: "cocoapods";
-}
-
-div.clear { clear: both; }
 
 /* Sections in content pages */
 
