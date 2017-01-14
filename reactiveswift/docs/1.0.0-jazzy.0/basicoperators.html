@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BasicOperators  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="BasicOperators  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="img/carat.png" />
+      BasicOperators  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="frameworkoverview.html">FrameworkOverview</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="designguidelines.html">DesignGuidelines</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Observer.html">Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ObserverProtocol.html">ObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProtocol.html">SignalProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_21DateSchedulerProtocol__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_21DateSchedulerProtocol_6leewayS1__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:leeway:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ActionError.html">ActionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ActionProtocol.html">ActionProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BindingSourceProtocol.html">BindingSourceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BindingTargetProtocol.html">BindingTargetProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Bindings.html#/s:F13ReactiveSwiftoi2ltu0_RxS_21BindingTargetProtocol_S_21BindingSourceProtocolwx5Valuezw_5Valuew_5ErrorzO6Result7NoErrorrFTxq__GSqPS_10Disposable__">&lt;~(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Bindings.html#/s:F13ReactiveSwiftoi2ltu0_RxS_21BindingTargetProtocol_S_21BindingSourceProtocolwx5ValueS_16OptionalProtocolw_5ErrorzO6Result7NoErrorw_5ValuezWxS2_7Wrapped_rFTxq__GSqPS_10Disposable__">&lt;~(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/DateSchedulerProtocol.html">DateSchedulerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SchedulerProtocol.html">SchedulerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html#/s:CC13ReactiveSwift8Lifetime5Token">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ActionDisposable.html">ActionDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CompositeDisposable/DisposableHandle.html">– DisposableHandle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SimpleDisposable.html">SimpleDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableGSqPS_10Disposable___CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableFT_T__CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_GSqPS_10Disposable___CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_FT_T__CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AtomicProtocol.html">AtomicProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BagIterator.html">BagIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Utilities.html#/s:C13ReactiveSwift12RemovalToken">RemovalToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Utilities.html#/s:13ReactiveSwift11EventLogger">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Utilities.html#/s:O13ReactiveSwift12LoggingEvent">LoggingEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#basic-operators' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='basic-operators'>Basic Operators</h1>
+
+<p>This document explains some of the most common operators used in ReactiveCocoa,
+and includes examples demonstrating their use.</p>
+
+<p>Note that “operators”, in this context, refers to functions that transform
+<a href="FrameworkOverview.md#signals">signals</a> and <a href="FrameworkOverview.md#signal-producers">signal producers</a>, <em>not</em> custom Swift operators. In other
+words, these are composable primitives provided by ReactiveCocoa for working
+with event streams.</p>
+
+<p>This document will use the term “event stream” when dealing with concepts that
+apply to both <code>Signal</code> and <code>SignalProducer</code>. When the distinction matters, the
+types will be referred to by name.</p>
+
+<p><strong><a href="#performing-side-effects-with-event-streams">Performing side effects with event streams</a></strong></p>
+
+<ol>
+<li><a href="#observation">Observation</a></li>
+<li><a href="#injecting-effects">Injecting effects</a></li>
+</ol>
+
+<p><strong><a href="#operator-composition">Operator composition</a></strong></p>
+
+<ol>
+<li><a href="#lifting">Lifting</a></li>
+</ol>
+
+<p><strong><a href="#transforming-event-streams">Transforming event streams</a></strong></p>
+
+<ol>
+<li><a href="#mapping">Mapping</a></li>
+<li><a href="#filtering">Filtering</a></li>
+<li><a href="#aggregating">Aggregating</a></li>
+</ol>
+
+<p><strong><a href="#combining-event-streams">Combining event streams</a></strong></p>
+
+<ol>
+<li><a href="#combining-latest-values">Combining latest values</a></li>
+<li><a href="#zipping">Zipping</a></li>
+</ol>
+
+<p><strong><a href="#flattening-event-streams">Flattening event streams</a></strong></p>
+
+<ol>
+<li><a href="#merging">Merging</a></li>
+<li><a href="#concatenating">Concatenating</a></li>
+<li><a href="#switching-to-the-latest">Switching to the latest</a></li>
+</ol>
+
+<p><strong><a href="#working-with-errors">Working with errors</a></strong></p>
+
+<ol>
+<li><a href="#catching-failures">Catching failures</a></li>
+<li><a href="#failable-transformations">Failable transformations</a></li>
+<li><a href="#retrying">Retrying</a></li>
+<li><a href="#mapping-errors">Mapping errors</a></li>
+<li><a href="#promote">Promote</a></li>
+</ol>
+<a href='#performing-side-effects-with-event-streams' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='performing-side-effects-with-event-streams'>Performing side effects with event streams</h2>
+<a href='#observation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='observation'>Observation</h3>
+
+<p><code>Signal</code>s can be observed with the <code>observe</code> function.</p>
+<pre class="highlight plaintext"><code>signal.observe { event in
+    switch event {
+    case let .value(value):
+        print("Value: \(value)")
+    case let .failed(error):
+        print("Failed: \(error)")
+    case .completed:
+        print("Completed")
+    case .interrupted:
+        print("Interrupted")
+    }
+}
+</code></pre>
+
+<p>Alternatively, callbacks for the <code>value</code>, <code>failed</code>, <code>completed</code> and <code>interrupted</code> events can be provided which will be called when a corresponding event occurs.</p>
+<pre class="highlight plaintext"><code>signal.observeValues { value in
+    print("Value: \(value)")
+}
+
+signal.observeFailed { error in
+    print("Failed: \(error)")
+}
+
+signal.observeCompleted {
+    print("Completed")
+}
+
+signal.observeInterrupted {
+    print("Interrupted")
+}
+</code></pre>
+<a href='#injecting-effects' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='injecting-effects'>Injecting effects</h3>
+
+<p>Side effects can be injected on an event stream with the <code>on</code> operator without actually subscribing to it. </p>
+<pre class="highlight plaintext"><code>let producer = signalProducer
+    .on(starting: { 
+        print("Starting")
+    }, started: { 
+        print("Started")
+    }, event: { event in
+        print("Event: \(event)")
+    }, value: { value in
+        print("Value: \(value)")
+    }, failed: { error in
+        print("Failed: \(error)")
+    }, completed: { 
+        print("Completed")
+    }, interrupted: { 
+        print("Interrupted")
+    }, terminated: { 
+        print("Terminated")
+    }, disposed: { 
+        print("Disposed")
+    })
+</code></pre>
+
+<p>Note that it is not necessary to provide all parameters - all of them are optional, you only need to provide callbacks for the events you care about.</p>
+
+<p>Note that nothing will be printed until <code>producer</code> is started (possibly somewhere else).</p>
+<a href='#operator-composition' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='operator-composition'>Operator composition</h2>
+<a href='#lifting' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='lifting'>Lifting</h3>
+
+<p><code>Signal</code> operators can be <em>lifted</em> to operate upon <code>SignalProducer</code>s using the
+<code>lift</code> method.</p>
+
+<p>This will create a new <code>SignalProducer</code> which will apply the given operator to
+<em>every</em> <code>Signal</code> created, just as if the operator had been applied to each
+produced <code>Signal</code> individually.</p>
+<a href='#transforming-event-streams' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='transforming-event-streams'>Transforming event streams</h2>
+
+<p>These operators transform an event stream into a new stream.</p>
+<a href='#mapping' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='mapping'>Mapping</h3>
+
+<p>The <code>map</code> operator is used to transform the values in an event stream, creating
+a new stream with the results.</p>
+<pre class="highlight plaintext"><code>let (signal, observer) = Signal&lt;String, NoError&gt;.pipe()
+
+signal
+    .map { string in string.uppercased() }
+    .observeValues { value in print(value) }
+
+observer.send(value: "a")     // Prints A
+observer.send(value: "b")     // Prints B
+observer.send(value: "c")     // Prints C
+</code></pre>
+
+<p><a href="http://neilpa.me/rac-marbles/#map">Interactive visualisation of the <code>map</code> operator.</a></p>
+<a href='#filtering' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='filtering'>Filtering</h3>
+
+<p>The <code>filter</code> operator is used to only include values in an event stream that
+satisfy a predicate.</p>
+<pre class="highlight plaintext"><code>let (signal, observer) = Signal&lt;Int, NoError&gt;.pipe()
+
+signal
+    .filter { number in number % 2 == 0 }
+    .observeValues { value in print(value) }
+
+observer.send(value: 1)     // Not printed
+observer.send(value: 2)     // Prints 2
+observer.send(value: 3)     // Not printed
+observer.send(value: 4)     // prints 4
+</code></pre>
+
+<p><a href="http://neilpa.me/rac-marbles/#filter">Interactive visualisation of the <code>filter</code> operator.</a></p>
+<a href='#aggregating' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='aggregating'>Aggregating</h3>
+
+<p>The <code>reduce</code> operator is used to aggregate a event stream’s values into a single
+combined value. Note that the final value is only sent after the input stream
+completes.</p>
+<pre class="highlight plaintext"><code>let (signal, observer) = Signal&lt;Int, NoError&gt;.pipe()
+
+signal
+    .reduce(1) { $0 * $1 }
+    .observeValues { value in print(value) }
+
+observer.send(value: 1)     // nothing printed
+observer.send(value: 2)     // nothing printed
+observer.send(value: 3)     // nothing printed
+observer.sendCompleted()   // prints 6
+</code></pre>
+
+<p>The <code>collect</code> operator is used to aggregate a event stream’s values into
+a single array value. Note that the final value is only sent after the input
+stream completes.</p>
+<pre class="highlight plaintext"><code>let (signal, observer) = Signal&lt;Int, NoError&gt;.pipe()
+
+signal
+    .collect()
+    .observeValues { value in print(value) }
+
+observer.send(value: 1)     // nothing printed
+observer.send(value: 2)     // nothing printed
+observer.send(value: 3)     // nothing printed
+observer.sendCompleted()   // prints [1, 2, 3]
+</code></pre>
+
+<p><a href="http://neilpa.me/rac-marbles/#reduce">Interactive visualisation of the <code>reduce</code> operator.</a></p>
+<a href='#combining-event-streams' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='combining-event-streams'>Combining event streams</h2>
+
+<p>These operators combine values from multiple event streams into a new, unified
+stream.</p>
+<a href='#combining-latest-values' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='combining-latest-values'>Combining latest values</h3>
+
+<p>The <code>combineLatest</code> function combines the latest values of two (or more) event
+streams.</p>
+
+<p>The resulting stream will only send its first value after each input has sent at
+least one value. After that, new values on any of the inputs will result in
+a new value on the output.</p>
+<pre class="highlight plaintext"><code>let (numbersSignal, numbersObserver) = Signal&lt;Int, NoError&gt;.pipe()
+let (lettersSignal, lettersObserver) = Signal&lt;String, NoError&gt;.pipe()
+
+let signal = Signal.combineLatest(numbersSignal, lettersSignal)
+signal.observeValues { next in print("Next: \(next)") }
+signal.observeCompleted { print("Completed") }
+
+numbersObserver.send(value: 0)      // nothing printed
+numbersObserver.send(value: 1)      // nothing printed
+lettersObserver.send(value: "A")    // prints (1, A)
+numbersObserver.send(value: 2)      // prints (2, A)
+numbersObserver.sendCompleted()  // nothing printed
+lettersObserver.send(value: "B")    // prints (2, B)
+lettersObserver.send(value: "C")    // prints (2, C)
+lettersObserver.sendCompleted()  // prints "Completed"
+</code></pre>
+
+<p>The <code>combineLatest(with:)</code> operator works in the same way, but as an operator.</p>
+
+<p><a href="http://neilpa.me/rac-marbles/#combineLatest">Interactive visualisation of the <code>combineLatest</code> operator.</a></p>
+<a href='#zipping' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='zipping'>Zipping</h3>
+
+<p>The <code>zip</code> function joins values of two (or more) event streams pair-wise. The
+elements of any Nth tuple correspond to the Nth elements of the input streams.</p>
+
+<p>That means the Nth value of the output stream cannot be sent until each input
+has sent at least N values.</p>
+<pre class="highlight plaintext"><code>let (numbersSignal, numbersObserver) = Signal&lt;Int, NoError&gt;.pipe()
+let (lettersSignal, lettersObserver) = Signal&lt;String, NoError&gt;.pipe()
+
+let signal = Signal.zip(numbersSignal, lettersSignal)
+signal.observeValues { next in print("Next: \(next)") }
+signal.observeCompleted { print("Completed") }
+
+numbersObserver.send(value: 0)      // nothing printed
+numbersObserver.send(value: 1)      // nothing printed
+lettersObserver.send(value: "A")    // prints (0, A)
+numbersObserver.send(value: 2)      // nothing printed
+numbersObserver.sendCompleted()  // nothing printed
+lettersObserver.send(value: "B")    // prints (1, B)
+lettersObserver.send(value: "C")    // prints (2, C) &amp; "Completed"
+
+</code></pre>
+
+<p>The <code>zipWith</code> operator works in the same way, but as an operator.</p>
+
+<p><a href="http://neilpa.me/rac-marbles/#zip">Interactive visualisation of the <code>zip</code> operator.</a></p>
+<a href='#flattening-event-streams' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='flattening-event-streams'>Flattening event streams</h2>
+
+<p>The <code>flatten</code> operator transforms a stream-of-streams into a single stream - where values are forwarded from the inner stream in accordance with the provided <code>FlattenStrategy</code>. The flattened result becomes that of the outer stream type - i.e. a <code>SignalProducer</code>-of-<code>SignalProducer</code>s or <code>SignalProducer</code>-of-<code>Signal</code>s gets flattened to a <code>SignalProducer</code>, and likewise a <code>Signal</code>-of-<code>SignalProducer</code>s or <code>Signal</code>-of-<code>Signal</code>s gets flattened to a <code>Signal</code>.   </p>
+
+<p>To understand why there are different strategies and how they compare to each other, take a look at this example and imagine the column offsets as time:</p>
+<pre class="highlight plaintext"><code>let values = [
+// imagine column offset as time
+[ 1,    2,      3 ],
+   [ 4,      5,     6 ],
+         [ 7,     8 ],
+]
+
+let merge =
+[ 1, 4, 2, 7,5, 3,8,6 ]
+
+let concat = 
+[ 1,    2,      3,4,      5,     6,7,     8]
+
+let latest =
+[ 1, 4,    7,     8 ]
+</code></pre>
+
+<p>Note, how the values interleave and which values are even included in the resulting array.</p>
+<a href='#merging' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='merging'>Merging</h3>
+
+<p>The <code>.merge</code> strategy immediately forwards every value of the inner event streams to the outer event stream. Any failure sent on the outer event stream or any inner event stream is immediately sent on the flattened event stream and terminates it.</p>
+<pre class="highlight plaintext"><code>let (lettersSignal, lettersObserver) = Signal&lt;String, NoError&gt;.pipe()
+let (numbersSignal, numbersObserver) = Signal&lt;String, NoError&gt;.pipe()
+let (signal, observer) = Signal&lt;Signal&lt;String, NoError&gt;, NoError&gt;.pipe()
+
+signal.flatten(.merge).observeValues { print($0) }
+
+observer.send(value: lettersSignal)
+observer.send(value: numbersSignal)
+observer.sendCompleted()
+
+lettersObserver.send(value: "a")    // prints "a"
+numbersObserver.send(value: "1")    // prints "1"
+lettersObserver.send(value: "b")    // prints "b"
+numbersObserver.send(value: "2")    // prints "2"
+lettersObserver.send(value: "c")    // prints "c"
+numbersObserver.send(value: "3")    // prints "3"
+</code></pre>
+
+<p><a href="http://neilpa.me/rac-marbles/#merge">Interactive visualisation of the <code>flatten(.merge)</code> operator.</a></p>
+<a href='#concatenating' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='concatenating'>Concatenating</h3>
+
+<p>The <code>.concat</code> strategy is used to serialize events of the inner event streams. The outer event stream is started observed. Each subsequent event stream is not observed until the preceeding one has completed. Failures are immediately forwarded to the flattened event stream.</p>
+<pre class="highlight plaintext"><code>let (lettersSignal, lettersObserver) = Signal&lt;String, NoError&gt;.pipe()
+let (numbersSignal, numbersObserver) = Signal&lt;String, NoError&gt;.pipe()
+let (signal, observer) = Signal&lt;Signal&lt;String, NoError&gt;, NoError&gt;.pipe()
+
+signal.flatten(.concat).observeValues { print($0) }
+
+observer.send(value: lettersSignal)
+observer.send(value: numbersSignal)
+observer.sendCompleted()
+
+numbersObserver.send(value: "1")    // nothing printed
+lettersObserver.send(value: "a")    // prints "a"
+lettersObserver.send(value: "b")    // prints "b"
+numbersObserver.send(value: "2")    // nothing printed
+lettersObserver.send(value: "c")    // prints "c"
+lettersObserver.sendCompleted()     // nothing printed
+numbersObserver.send(value: "3")    // prints "3"
+numbersObserver.sendCompleted()     // nothing printed
+</code></pre>
+
+<p><a href="http://neilpa.me/rac-marbles/#concat">Interactive visualisation of the <code>flatten(.concat)</code> operator.</a></p>
+<a href='#switching-to-the-latest' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='switching-to-the-latest'>Switching to the latest</h3>
+
+<p>The <code>.latest</code> strategy forwards only values or a failure from the latest input event stream.</p>
+<pre class="highlight plaintext"><code>let (lettersSignal, lettersObserver) = Signal&lt;String, NoError&gt;.pipe()
+let (numbersSignal, numbersObserver) = Signal&lt;String, NoError&gt;.pipe()
+let (signal, observer) = Signal&lt;Signal&lt;String, NoError&gt;, NoError&gt;.pipe()
+
+signal.flatten(.latest).observeValues { print($0) }
+
+observer.send(value: lettersSignal) // nothing printed
+numbersObserver.send(value: "1")    // nothing printed
+lettersObserver.send(value: "a")    // prints "a"
+lettersObserver.send(value: "b")    // prints "b"
+numbersObserver.send(value: "2")    // nothing printed
+observer.send(value: numbersSignal) // nothing printed
+lettersObserver.send(value: "c")    // nothing printed
+numbersObserver.send(value: "3")    // prints "3"
+</code></pre>
+<a href='#working-with-errors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='working-with-errors'>Working with errors</h2>
+
+<p>These operators are used to handle failures that might occur on an event stream, or perform operations that might fail on an event stream.</p>
+<a href='#catching-failures' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='catching-failures'>Catching failures</h3>
+
+<p>The <code>flatMapError</code> operator catches any failure that may occur on the input event stream, then starts a new <code>SignalProducer</code> in its place.</p>
+<pre class="highlight plaintext"><code>let (signal, observer) = Signal&lt;String, NSError&gt;.pipe()
+let producer = SignalProducer(signal: signal)
+
+let error = NSError(domain: "domain", code: 0, userInfo: nil)
+
+producer
+    .flatMapError { _ in SignalProducer&lt;String, NoError&gt;(value: "Default") }
+    .startWithValues { print($0) }
+
+
+observer.send(value: "First")     // prints "First"
+observer.send(value: "Second")    // prints "Second"
+observer.send(error: error)       // prints "Default"
+</code></pre>
+<a href='#failable-transformations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='failable-transformations'>Failable transformations</h3>
+
+<p><code>SignalProducer.attempt(_:)</code> allows you to turn a failable operation into an event stream.
+The <code>attempt(_:)</code> and <code>attemptMap(_:)</code> operators allow you to perform failable operations or transformations on an event stream.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dictionaryPath</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">fileURLWithPath</span><span class="p">:</span> <span class="s">"/usr/share/dict/words"</span><span class="p">)</span>
+
+<span class="c1">// Create a `SignalProducer` that lazily attempts the closure</span>
+<span class="c1">// whenever it is started</span>
+<span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="kt">SignalProducer</span><span class="o">.</span><span class="n">attempt</span> <span class="p">{</span> <span class="k">try</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">contentsOf</span><span class="p">:</span> <span class="n">dictionaryPath</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="c1">// Lazily apply a failable transformation</span>
+<span class="k">let</span> <span class="nv">json</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">attemptMap</span> <span class="p">{</span> <span class="k">try</span> <span class="kt">JSONSerialization</span><span class="o">.</span><span class="nf">jsonObject</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="nv">$0</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="n">json</span><span class="o">.</span><span class="n">startWithResult</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Dictionary as JSON:"</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+    <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Couldn't parse dictionary as JSON: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#retrying' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='retrying'>Retrying</h3>
+
+<p>The <code>retry</code> operator will restart the original <code>SignalProducer</code> on failure up to <code>count</code> times.</p>
+<pre class="highlight plaintext"><code>var tries = 0
+let limit = 2
+let error = NSError(domain: "domain", code: 0, userInfo: nil)
+let producer = SignalProducer&lt;String, NSError&gt; { (observer, _) in
+    tries += 1
+    if tries &lt;= limit {
+        observer.send(error: error)
+    } else {
+        observer.send(value: "Success")
+        observer.sendCompleted()
+    }
+}
+
+producer
+    .on(failed: {e in print("Failure")})    // prints "Failure" twice
+    .retry(upTo: 2)
+    .start { event in
+        switch event {
+        case let .value(next):
+            print(next)                     // prints "Success"
+        case let .failed(error):
+            print("Failed: \(error)")
+        case .completed:
+            print("Completed")
+        case .interrupted:
+            print("Interrupted")
+        }
+}
+</code></pre>
+
+<p>If the <code>SignalProducer</code> does not succeed after <code>count</code> tries, the resulting <code>SignalProducer</code> will fail. E.g., if  <code>retry(1)</code> is used in the example above instead of <code>retry(2)</code>, <code>&quot;Failed: Error Domain=domain Code=0 &quot;(null)&quot;&quot;</code> will be printed instead of <code>&quot;Success&quot;</code>.</p>
+<a href='#mapping-errors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='mapping-errors'>Mapping errors</h3>
+
+<p>The <code>mapError</code> operator transforms the error of any failure in an event stream into a new error.</p>
+<pre class="highlight plaintext"><code>enum CustomError: String, Error {
+    case foo = "Foo Error"
+    case bar = "Bar Error"
+    case other = "Other Error"
+}
+
+let (signal, observer) = Signal&lt;String, NSError&gt;.pipe()
+
+signal
+    .mapError { (error: NSError) -&gt; CustomError in
+        switch error.domain {
+        case "com.example.foo":
+            return .foo
+        case "com.example.bar":
+            return .bar
+        default:
+            return .other
+        }
+    }
+    .observeFailed { error in
+        print(error.rawValue)
+}
+
+observer.send(error: NSError(domain: "com.example.foo", code: 42, userInfo: nil))    // prints "Foo Error"
+</code></pre>
+<a href='#promote' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='promote'>Promote</h3>
+
+<p>The <code>promoteErrors</code> operator promotes an event stream that does not generate failures into one that can. </p>
+<pre class="highlight plaintext"><code>let (numbersSignal, numbersObserver) = Signal&lt;Int, NoError&gt;.pipe()
+let (lettersSignal, lettersObserver) = Signal&lt;String, NSError&gt;.pipe()
+
+numbersSignal
+    .promoteErrors(NSError.self)
+    .combineLatest(with: lettersSignal)
+</code></pre>
+
+<p>The given stream will still not <em>actually</em> generate failures, but this is useful
+because some operators to <a href="#combining-event-streams">combine streams</a> require
+the inputs to have matching error types.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2017-01-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
