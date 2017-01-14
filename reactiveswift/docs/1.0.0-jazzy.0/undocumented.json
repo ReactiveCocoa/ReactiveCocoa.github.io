@@ -1,0 +1,131 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Action.swift",
+      "line": 315,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Atomic.swift",
+      "line": 255,
+      "symbol": "AtomicProtocol.withValue(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Atomic.swift",
+      "line": 258,
+      "symbol": "AtomicProtocol.modify(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Bag.swift",
+      "line": 17,
+      "symbol": "Bag.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Deprecations+Removals.swift",
+      "line": 237,
+      "symbol": "SignalProtocol.flatten(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Deprecations+Removals.swift",
+      "line": 319,
+      "symbol": "SignalProducerProtocol.flatten(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Disposable.swift",
+      "line": 50,
+      "symbol": "AnyDisposable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Disposable.swift",
+      "line": 68,
+      "symbol": "SimpleDisposable.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Event.swift",
+      "line": 124,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/EventLogger.swift",
+      "line": 13,
+      "symbol": "LoggingEvent.Signal",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/EventLogger.swift",
+      "line": 21,
+      "symbol": "LoggingEvent.SignalProducer",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Lifetime.swift",
+      "line": 61,
+      "symbol": "Lifetime.Token.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Optional.swift",
+      "line": 14,
+      "symbol": "OptionalProtocol.init(reconstructing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Optional.swift",
+      "line": 25,
+      "symbol": "Optional.init(reconstructing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Scheduler.swift",
+      "line": 69,
+      "symbol": "ImmediateScheduler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Scheduler.swift",
+      "line": 171,
+      "symbol": "QueueScheduler.queue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 90,
+      "symbol": "<~(_:_:).Target",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 138,
+      "symbol": "<~(_:_:).Target",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/ReactiveCocoa/ReactiveSwift"
+}
