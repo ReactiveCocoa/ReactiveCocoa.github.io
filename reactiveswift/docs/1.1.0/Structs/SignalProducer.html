@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SignalProducer Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/SignalProducer" class="dashAnchor"></a>
+
+    <a title="SignalProducer Struct Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      SignalProducer Struct Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../frameworkoverview.html">FrameworkOverview</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../designguidelines.html">DesignGuidelines</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Observer.html">Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ObserverProtocol.html">ObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProtocol.html">SignalProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_13DateScheduler__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_13DateScheduler_6leewayS1__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:leeway:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionError.html">ActionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ActionProtocol.html">ActionProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Bindings.html#/s:F13ReactiveSwiftoi2ltu0_RxS_21BindingTargetProvider_S_13BindingSourcewx5Valuezw_5Valuew_5ErrorzO6Result7NoErrorrFTxq__GSqPS_10Disposable__">&lt;~(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Bindings.html#/s:F13ReactiveSwiftoi2ltu0_RxS_21BindingTargetProvider_S_13BindingSourcewx5ValueS_16OptionalProtocolw_5ErrorzO6Result7NoErrorw_5ValuezWxS2_7Wrapped_rFTxq__GSqPS_10Disposable__">&lt;~(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html#/s:CC13ReactiveSwift8Lifetime5Token">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ActionDisposable.html">ActionDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CompositeDisposable/DisposableHandle.html">– DisposableHandle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SimpleDisposable.html">SimpleDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableGSqPS_10Disposable___CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableFT_T__CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_GSqPS_10Disposable___CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_FT_T__CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AtomicProtocol.html">AtomicProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BagIterator.html">BagIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Utilities.html#/s:C13ReactiveSwift12RemovalToken">RemovalToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Utilities.html#/s:13ReactiveSwift11EventLogger">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Utilities.html#/s:O13ReactiveSwift12LoggingEvent">LoggingEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ValidationResult.html">ValidationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ValidatorOutput.html">ValidatorOutput</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BindingSource.html">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Protocols.html#/s:P13ReactiveSwift21BindingTargetProvider">BindingTargetProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>SignalProducer</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SignalProducer</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Error</span><span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A SignalProducer creates Signals that can produce values of type <code>Value</code> 
+and/or fail with errors of type <code>Error</code>. If no failure should be possible, 
+<code>NoError</code> can be specified for <code>Error</code>.</p>
+
+<p>SignalProducers can be used to represent operations or tasks, like network
+requests, where each invocation of <code>start()</code> will create a new underlying
+operation. This ensures that consumers will receive the results, versus a
+plain Signal, where the results might be sent before any observers are
+attached.</p>
+
+<p>Because of the behavior of <code>start()</code>, different Signals created from the
+producer may see a different version of Events. The Events may arrive in a
+different order between Signals, or the stream might be completely
+different!</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercuRd__S_14SignalProtocolxzwd__5Value_zwd__5ErrorrFqd__GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercuRd__S_14SignalProtocolxzwd__5Value_zwd__5ErrorrFqd__GS0_xq__">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code>SignalProducer</code> that will emit the same events as the
+given signal.</p>
+
+<p>If the Disposable returned from <code>start()</code> is disposed or a terminating
+event is sent to the observer, the given signal will be disposed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SignalProtocol.html">SignalProtocol</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">signal</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Value</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Error</span> <span class="o">==</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A signal to observe after starting the producer.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercFFTGCS_8Observerxq__CS_19CompositeDisposable_T_GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercFFTGCS_8Observerxq__CS_19CompositeDisposable_T_GS0_xq__">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a SignalProducer that will invoke the given closure once for
+each invocation of <code>start()</code>.</p>
+
+<p>The events that the closure puts into the given observer will become
+the events sent by the started <code><a href="../Classes/Signal.html">Signal</a></code> to its observers.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>If the <code><a href="../Protocols/Disposable.html">Disposable</a></code> returned from <code>start()</code> is disposed or a
+    terminating event is sent to the observer, the given
+    <code><a href="../Classes/CompositeDisposable.html">CompositeDisposable</a></code> will be disposed, at which point work
+    should be interrupted and any temporary resources cleaned up.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">startHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;.</span><span class="kt"><a href="../Classes/Observer.html">Observer</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/CompositeDisposable.html">CompositeDisposable</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that accepts observer and a disposable.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercFT5valuex_GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercFT5valuex_GS0_xq__">init(value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a producer for a <code><a href="../Classes/Signal.html">Signal</a></code> that will immediately send one value
+then complete.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value that should be sent by the <code>Signal</code> in a <code>value</code> event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercFFT_xGS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercFFT_xGS0_xq__">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a producer for a <code><a href="../Classes/Signal.html">Signal</a></code> that immediately sends one value, then
+completes.</p>
+
+<p>This initializer differs from <code><a href="../Structs/SignalProducer.html#/s:FV13ReactiveSwift14SignalProducercFT5valuex_GS0_xq__">init(value:)</a></code> in that its sole <code>value</code>
+event is constructed lazily by invoking the supplied <code>action</code> when
+the <code>SignalProducer</code> is started.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A action that yields a value to be sent by the <code>Signal</code> as a <code>value</code> event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercFT5errorq__GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercFT5errorq__GS0_xq__">init(error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a producer for a <code><a href="../Classes/Signal.html">Signal</a></code> that will immediately fail with the
+given error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An error that should be sent by the <code>Signal</code> in a <code>failed</code> event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercFT6resultGO6Result6Resultxq___GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(result:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercFT6resultGO6Result6Resultxq___GS0_xq__">init(result:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a producer for a Signal that will immediately send one value
+then complete, or immediately fail, depending on the given Result.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Result</code> instance that will send either <code>value</code> event if <code>result</code> is <code>success</code>ful or <code>failed</code> event if <code>result</code> is a <code>failure</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercuRd__s8SequencexzWd__8Iterator7Element_rFqd__GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercuRd__s8SequencexzWd__8Iterator7Element_rFqd__GS0_xq__">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a producer for a Signal that will immediately send the values
+from the given sequence, then complete.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Iterator</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A sequence of values that a <code>Signal</code> will send as separate <code>value</code> events and then complete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducercFt6valuesxxGSax__GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/init(values:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducercFt6valuesxxGSax__GS0_xq__">init(values:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a producer for a Signal that will immediately send the values
+from the given sequence, then complete.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">values</span> <span class="nv">first</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">_</span> <span class="nv">second</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">_</span> <span class="nv">tail</span><span class="p">:</span> <span class="kt">Value</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>first</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First value for the <code>Signal</code> to send.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>second</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second value for the <code>Signal</code> to send.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tail</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Rest of the values to be sent by the <code>Signal</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV13ReactiveSwift14SignalProducer5emptyGS0_xq__"></a>
+                    <a name="//apple_ref/swift/Variable/empty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV13ReactiveSwift14SignalProducer5emptyGS0_xq__">empty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A producer for a Signal that will immediately complete without sending
+any values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">empty</span><span class="p">:</span> <span class="kt">SignalProducer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV13ReactiveSwift14SignalProducer5neverGS0_xq__"></a>
+                    <a name="//apple_ref/swift/Variable/never" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV13ReactiveSwift14SignalProducer5neverGS0_xq__">never</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A producer for a Signal that never sends any events to its observers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">never</span><span class="p">:</span> <span class="kt">SignalProducer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV13ReactiveSwift14SignalProducer15startWithSignalFFTGCS_6Signalxq__PS_10Disposable__T_T_"></a>
+                    <a name="//apple_ref/swift/Method/startWithSignal(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV13ReactiveSwift14SignalProducer15startWithSignalFFTGCS_6Signalxq__PS_10Disposable__T_T_">startWithSignal(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a Signal from the producer, pass it into the given closure,
+then start sending events on the Signal when the closure has returned.</p>
+
+<p>The closure will also receive a disposable which can be used to
+interrupt the work associated with the signal and immediately send an
+<code>interrupted</code> event.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startWithSignal</span><span class="p">(</span><span class="n">_</span> <span class="nv">setup</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">signal</span><span class="p">:</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">_</span> <span class="nv">interrupter</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setUp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that accepts a <code>signal</code> and <code>interrupter</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP13ReactiveSwift22SignalProducerProtocol8producerGVS_14SignalProducerwx5Valuewx5Error_"></a>
+                    <a name="//apple_ref/swift/Property/producer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP13ReactiveSwift22SignalProducerProtocol8producerGVS_14SignalProducerwx5Valuewx5Error_">producer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Signal from the producer, passes it into the given closure,
+then starts sending events on the Signal when the closure has returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">producer</span><span class="p">:</span> <span class="kt">SignalProducer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFV13ReactiveSwift14SignalProducer7attemptFFT_GO6Result6Resultxq__GS0_xq__"></a>
+                    <a name="//apple_ref/swift/Method/attempt(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFV13ReactiveSwift14SignalProducer7attemptFFT_GO6Result6Resultxq__GS0_xq__">attempt(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>SignalProducer</code> that will attempt the given operation once for
+each invocation of <code>start()</code>.</p>
+
+<p>Upon success, the started signal will send the resulting value then
+complete. Upon failure, the started signal will fail with the error that
+occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">attempt</span><span class="p">(</span><span class="n">_</span> <span class="nv">operation</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SignalProducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>operation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that returns instance of <code>Result</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>SignalProducer</code> that will forward <code>success</code>ful <code>result</code> as <code>value</code> event and then complete or <code>failed</code> event if <code>result</code> is a <code>failure</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP13ReactiveSwift13BindingSource7observeFTGCS_8Observerwx5Valuewx5Error_6duringCS_8Lifetime_GSqPS_10Disposable__"></a>
+                    <a name="//apple_ref/swift/Method/observe(_:during:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP13ReactiveSwift13BindingSource7observeFTGCS_8Observerwx5Valuewx5Error_6duringCS_8Lifetime_GSqPS_10Disposable__">observe(_:during:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Observe the binding source by sending any events to the given observer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">observe</span><span class="p">(</span><span class="n">_</span> <span class="nv">observer</span><span class="p">:</span> <span class="kt">ProducedSignal</span><span class="o">.</span><span class="kt"><a href="../Classes/Observer.html">Observer</a></span><span class="p">,</span> <span class="n">during</span> <span class="nv">lifetime</span><span class="p">:</span> <span class="kt"><a href="../Classes/Lifetime.html">Lifetime</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2017-03-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

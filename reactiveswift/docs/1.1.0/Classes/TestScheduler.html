@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TestScheduler Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/TestScheduler" class="dashAnchor"></a>
+
+    <a title="TestScheduler Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      TestScheduler Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../frameworkoverview.html">FrameworkOverview</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../designguidelines.html">DesignGuidelines</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Observer.html">Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ObserverProtocol.html">ObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProtocol.html">SignalProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_13DateScheduler__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_13DateScheduler_6leewayS1__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:leeway:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionError.html">ActionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ActionProtocol.html">ActionProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Bindings.html#/s:F13ReactiveSwiftoi2ltu0_RxS_21BindingTargetProvider_S_13BindingSourcewx5Valuezw_5Valuew_5ErrorzO6Result7NoErrorrFTxq__GSqPS_10Disposable__">&lt;~(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Bindings.html#/s:F13ReactiveSwiftoi2ltu0_RxS_21BindingTargetProvider_S_13BindingSourcewx5ValueS_16OptionalProtocolw_5ErrorzO6Result7NoErrorw_5ValuezWxS2_7Wrapped_rFTxq__GSqPS_10Disposable__">&lt;~(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html#/s:CC13ReactiveSwift8Lifetime5Token">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ActionDisposable.html">ActionDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CompositeDisposable/DisposableHandle.html">– DisposableHandle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SimpleDisposable.html">SimpleDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableGSqPS_10Disposable___CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableFT_T__CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_GSqPS_10Disposable___CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_FT_T__CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AtomicProtocol.html">AtomicProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BagIterator.html">BagIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Utilities.html#/s:C13ReactiveSwift12RemovalToken">RemovalToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Utilities.html#/s:13ReactiveSwift11EventLogger">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Utilities.html#/s:O13ReactiveSwift12LoggingEvent">LoggingEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ValidationResult.html">ValidationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ValidatorOutput.html">ValidatorOutput</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BindingSource.html">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Protocols.html#/s:P13ReactiveSwift21BindingTargetProvider">BindingTargetProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>TestScheduler</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TestScheduler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DateScheduler.html">DateScheduler</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A scheduler that implements virtualized time, for use in testing.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC13ReactiveSwift13TestScheduler11currentDateV10Foundation4Date"></a>
+                    <a name="//apple_ref/swift/Property/currentDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC13ReactiveSwift13TestScheduler11currentDateV10Foundation4Date">currentDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The virtual date that the scheduler is currently at.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentDate</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestSchedulercFT9startDateV10Foundation4Date_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(startDate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestSchedulercFT9startDateV10Foundation4Date_S0_">init(startDate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a TestScheduler with the given start date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span> <span class="o">=</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The start date of the scheduler.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler8scheduleFFT_T_GSqPS_10Disposable__"></a>
+                    <a name="//apple_ref/swift/Method/schedule(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler8scheduleFFT_T_GSqPS_10Disposable__">schedule(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enqueues an action on the scheduler.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The work is executed on <code><a href="../Classes/TestScheduler.html#/s:vC13ReactiveSwift13TestScheduler11currentDateV10Foundation4Date">currentDate</a></code> as it is understood by the
+    scheduler.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">schedule</span><span class="p">(</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An action that will be performed on scheduler’s <code>currentDate</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional <code><a href="../Protocols/Disposable.html">Disposable</a></code> that can be used to cancel the work before it begins.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterO8Dispatch20DispatchTimeInterval6actionFT_T__GSqPS_10Disposable__"></a>
+                    <a name="//apple_ref/swift/Method/schedule(after:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterO8Dispatch20DispatchTimeInterval6actionFT_T__GSqPS_10Disposable__">schedule(after:action:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Schedules an action for execution after some delay.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">schedule</span><span class="p">(</span><span class="n">after</span> <span class="nv">delay</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delay</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A delay for execution.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure of the action to perform.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional disposable that can be used to cancel the work before it begins.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterV10Foundation4Date6actionFT_T__GSqPS_10Disposable__"></a>
+                    <a name="//apple_ref/swift/Method/schedule(after:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterV10Foundation4Date6actionFT_T__GSqPS_10Disposable__">schedule(after:action:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Schedules an action for execution at or after the given date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">schedule</span><span class="p">(</span><span class="n">after</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A starting date.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure of the action to perform.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional disposable that can be used to cancel the work before it begins.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterO8Dispatch20DispatchTimeInterval8intervalS2_6leewayS2_6actionFT_T__GSqPS_10Disposable__"></a>
+                    <a name="//apple_ref/swift/Method/schedule(after:interval:leeway:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterO8Dispatch20DispatchTimeInterval8intervalS2_6leewayS2_6actionFT_T__GSqPS_10Disposable__">schedule(after:interval:leeway:action:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Schedules a recurring action after given delay repeated at the given,
+interval, beginning at the given interval counted from <code><a href="../Classes/TestScheduler.html#/s:vC13ReactiveSwift13TestScheduler11currentDateV10Foundation4Date">currentDate</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">schedule</span><span class="p">(</span><span class="n">after</span> <span class="nv">delay</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">,</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">,</span> <span class="nv">leeway</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span> <span class="o">=</span> <span class="o">.</span><span class="nf">seconds</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delay</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A delay for action’s dispatch.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A repetition interval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>leeway</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Some delta for repetition interval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure of the action to repeat.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional <code><a href="../Protocols/Disposable.html">Disposable</a></code> that can be used to cancel the work before it begins.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterV10Foundation4Date8intervalO8Dispatch20DispatchTimeInterval6leewayS4_6actionFT_T__GSqPS_10Disposable__"></a>
+                    <a name="//apple_ref/swift/Method/schedule(after:interval:leeway:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler8scheduleFT5afterV10Foundation4Date8intervalO8Dispatch20DispatchTimeInterval6leewayS4_6actionFT_T__GSqPS_10Disposable__">schedule(after:interval:leeway:action:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Schedules a recurring action at the given interval with
+provided leeway, beginning at the given start date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">schedule</span><span class="p">(</span><span class="n">after</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">,</span> <span class="nv">leeway</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span> <span class="o">=</span> <span class="o">.</span><span class="nf">seconds</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Disposable.html">Disposable</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A date to schedule the first action for.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A repetition interval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>leeway</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Some delta for repetition interval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure of the action to repeat.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional <code><a href="../Protocols/Disposable.html">Disposable</a></code> that can be used to cancel the work before it begins.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler7advanceFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/advance()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler7advanceFT_T_">advance()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Advances the virtualized clock by an extremely tiny interval, dequeuing
+and executing any actions along the way.</p>
+
+<p>This is intended to be used as a way to execute actions that have been
+scheduled to run as soon as possible.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">advance</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler7advanceFT2byO8Dispatch20DispatchTimeInterval_T_"></a>
+                    <a name="//apple_ref/swift/Method/advance(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler7advanceFT2byO8Dispatch20DispatchTimeInterval_T_">advance(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Advances the virtualized clock by the given interval, dequeuing and
+executing any actions along the way.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">advance</span><span class="p">(</span><span class="n">by</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Interval by which the current date will be advanced.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler7advanceFT2toV10Foundation4Date_T_"></a>
+                    <a name="//apple_ref/swift/Method/advance(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler7advanceFT2toV10Foundation4Date_T_">advance(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Advances the virtualized clock to the given future date, dequeuing and
+executing any actions up until that point.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">advance</span><span class="p">(</span><span class="n">to</span> <span class="nv">newDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Future date to which the virtual clock will be advanced.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler3runFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/run()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler3runFT_T_">run()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dequeues and executes all scheduled actions, leaving the scheduler&rsquo;s
+date at <code>Date.distantFuture()</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13ReactiveSwift13TestScheduler6rewindFT2byO8Dispatch20DispatchTimeInterval_T_"></a>
+                    <a name="//apple_ref/swift/Method/rewind(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13ReactiveSwift13TestScheduler6rewindFT2byO8Dispatch20DispatchTimeInterval_T_">rewind(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rewinds the virtualized clock by the given interval.
+This simulates that user changes device date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rewind</span><span class="p">(</span><span class="n">by</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An interval by which the current date will be retreated.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2017-03-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
