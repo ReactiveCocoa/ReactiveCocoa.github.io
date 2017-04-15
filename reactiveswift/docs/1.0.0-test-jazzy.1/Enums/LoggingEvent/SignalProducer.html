@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SignalProducer Enum Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/SignalProducer" class="dashAnchor"></a>
+    <a title="SignalProducer Enum Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">ReactiveSwift Docs</a></p>
+        <p class="header-right"><a href="https://github.com/ReactiveCocoa/ReactiveSwift/"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Freactivecocoa%2Eio%2Ffeeds%2FReactiveSwift%2Exml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">ReactiveSwift Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        SignalProducer Enum Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../frameworkoverview.html">FrameworkOverview</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Observer.html">Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ObserverProtocol.html">ObserverProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SignalProtocol.html">SignalProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_21DateSchedulerProtocol__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../SignalProducer.html#/s:F13ReactiveSwift5timerFT8intervalO8Dispatch20DispatchTimeInterval2onPS_21DateSchedulerProtocol_6leewayS1__GVS_14SignalProducerV10Foundation4DateO6Result7NoError_">timer(interval:on:leeway:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/ActionError.html">ActionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ActionProtocol.html">ActionProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/BindingSourceProtocol.html">BindingSourceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/BindingTargetProtocol.html">BindingTargetProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions/&lt;~(_:_:).html">&lt;~(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions/&lt;~(_:_:).html">&lt;~(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/DateSchedulerProtocol.html">DateSchedulerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SchedulerProtocol.html">SchedulerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Lifetime/Token.html">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/ActionDisposable.html">ActionDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CompositeDisposable/DisposableHandle.html">– DisposableHandle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/SimpleDisposable.html">SimpleDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableGSqPS_10Disposable___CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Disposable.html#/s:F13ReactiveSwiftoi2peFTCS_19CompositeDisposableFT_T__CS0_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_GSqPS_10Disposable___CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Disposable.html#/s:F13ReactiveSwiftoi2peFTGCS_16ScopedDisposableCS_19CompositeDisposable_FT_T__CS1_16DisposableHandle">+=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/AtomicProtocol.html">AtomicProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BagIterator.html">BagIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Utilities.html#/s:C13ReactiveSwift12RemovalToken">RemovalToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Utilities.html#/s:13ReactiveSwift11EventLogger">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/LoggingEvent.html">LoggingEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/LoggingEvent/Signal.html">– Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/LoggingEvent/SignalProducer.html">– SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Documentations.html">Documentations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../designguidelines.html">DesignGuidelines</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../documentingcode.html">DocumentingCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../releaseprocess.html">ReleaseProcess</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Other Functions.html">Other Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Other Functions.html#/s:F13ReactiveSwiftoi2eeu0_Rxs9Equatable_S0__s5ErrorrFTGOS_5Eventxq__GS2_xq___Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Other Functions.html#/s:F13ReactiveSwiftoi2eeuRxs9Equatablexs5ErrorrFTGOS_11ActionErrorx_GS2_x__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SignalProducer</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer8startingFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/starting" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer8startingFMS1_S1_">starting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer7startedFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/started" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer7startedFMS1_S1_">started</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer5valueFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer5valueFMS1_S1_">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer9completedFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/completed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer9completedFMS1_S1_">completed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer6failedFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/failed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer6failedFMS1_S1_">failed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer10terminatedFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/terminated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer10terminatedFMS1_S1_">terminated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer8disposedFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/disposed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer8disposedFMS1_S1_">disposed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer11interruptedFMS1_S1_"></a>
+                    <a name="//apple_ref/swift/Element/interrupted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FOO13ReactiveSwift12LoggingEvent14SignalProducer11interruptedFMS1_S1_">interrupted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvOO13ReactiveSwift12LoggingEvent14SignalProducer9allEventsGVs3SetS1__"></a>
+                    <a name="//apple_ref/swift/Variable/allEvents" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvOO13ReactiveSwift12LoggingEvent14SignalProducer9allEventsGVs3SetS1__">allEvents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2016-12-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
