@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example.OnlineSearch  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="Example.OnlineSearch  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Freactivecocoa%2Eio%2Freactiveswift%2Fdocs%2FReactiveSwift%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Example.OnlineSearch  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="reactiveprimitives.html">ReactivePrimitives</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="exampleonlinesearch.html">Example.OnlineSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="rxcomparison.html">RxComparison</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Advanced Topics.html">Advanced Topics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="apicontracts.html">APIContracts</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal/Observer.html">– Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ActionError.html">ActionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Bindings.html#/s:P13ReactiveSwift13BindingSource">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BindingTargetProvider.html">BindingTargetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Scheduler Protocols.html">Scheduler Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html#/s:CC13ReactiveSwift8Lifetime5Token">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Debugging.html#/s:13ReactiveSwift11EventLogger">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Debugging.html#/s:O13ReactiveSwift12LoggingEvent">LoggingEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html#/s:VV13ReactiveSwift3Bag5Token">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag/Iterator.html">– Iterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="frameworkoverview.html">FrameworkOverview</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Enums.html">Other Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ValidationResult.html">ValidationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ValidatorOutput.html">ValidatorOutput</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='example-online-searching' class='heading'>Example: Online Searching</h1>
+
+<p>Let’s say you have a text field, and whenever the user types something into it,
+you want to make a network request which searches for that query.</p>
+
+<p><em>Please note that the following examples use Cocoa extensions in <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/#readme">ReactiveCocoa</a> for illustration.</em></p>
+<h4 id='observing-text-edits' class='heading'>Observing text edits</h4>
+
+<p>The first step is to observe edits to the text field, using a RAC extension to
+<code>UITextField</code> specifically for this purpose:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">searchStrings</span> <span class="o">=</span> <span class="n">textField</span><span class="o">.</span><span class="n">reactive</span><span class="o">.</span><span class="n">continuousTextValues</span>
+</code></pre>
+
+<p>This gives us a <a href="reactiveprimitives.html#signal-a-unidirectional-stream-of-events">Signal</a> which sends values of type <code>String?</code>.</p>
+<h4 id='making-network-requests' class='heading'>Making network requests</h4>
+
+<p>With each string, we want to execute a network request. ReactiveSwift offers an
+<code>URLSession</code> extension for doing exactly that:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">searchResults</span> <span class="o">=</span> <span class="n">searchStrings</span>
+    <span class="o">.</span><span class="nf">flatMap</span><span class="p">(</span><span class="o">.</span><span class="n">latest</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">SignalProducer</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Data</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">),</span> <span class="kt">AnyError</span><span class="o">&gt;</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="nf">makeSearchRequest</span><span class="p">(</span><span class="nv">escapedQuery</span><span class="p">:</span> <span class="n">query</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">reactive</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SearchResult</span><span class="p">]</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span>
+        <span class="k">return</span> <span class="k">self</span><span class="o">.</span><span class="nf">searchResults</span><span class="p">(</span><span class="nv">fromJSONString</span><span class="p">:</span> <span class="n">string</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="o">.</span><span class="nf">observe</span><span class="p">(</span><span class="nv">on</span><span class="p">:</span> <span class="kt">UIScheduler</span><span class="p">())</span>
+</code></pre>
+
+<p>This has transformed our producer of <code>String</code>s into a producer of <code>Array</code>s
+containing the search results, which will be forwarded on the main thread
+(using the <a href="frameworkoverview.html#Schedulers"><code>UIScheduler</code></a>).</p>
+
+<p>Additionally, <a href="basicoperators.html#combining-latest-values"><code>flatMap(.latest)</code></a> here ensures that <em>only one search</em>—the
+latest—is allowed to be running. If the user types another character while the
+network request is still in flight, it will be cancelled before starting a new
+one. Just think of how much code that would take to do by hand!</p>
+<h4 id='receiving-the-results' class='heading'>Receiving the results</h4>
+
+<p>Since the source of search strings is a <code>Signal</code> which has a hot signal semantic,
+the transformations we applied are automatically evaluated whenever new values are
+emitted from <code>searchStrings</code>.</p>
+
+<p>Therefore, we can simply observe the signal using <code>Signal.observe(_:)</code>:</p>
+<pre class="highlight swift"><code><span class="n">searchResults</span><span class="o">.</span><span class="n">observe</span> <span class="p">{</span> <span class="n">event</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">event</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">value</span><span class="p">(</span><span class="n">results</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Search results: </span><span class="se">\(</span><span class="n">results</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+    <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failed</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Search error: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+    <span class="k">case</span> <span class="o">.</span><span class="n">completed</span><span class="p">,</span> <span class="o">.</span><span class="nv">interrupted</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Here, we watch for the <code>Value</code> <a href="reactiveprimitives.html#event-the-basic-transfer-unit-of-an-event-stream">event</a>, which contains our results, and
+just log them to the console. This could easily do something else instead, like
+update a table view or a label on screen.</p>
+<h4 id='handling-failures' class='heading'>Handling failures</h4>
+
+<p>In this example so far, any network error will generate a <code>Failed</code>
+<a href="reactiveprimitives.html#event-the-basic-transfer-unit-of-an-event-stream">event</a>, which will terminate the event stream. Unfortunately, this
+means that future queries won’t even be attempted.</p>
+
+<p>To remedy this, we need to decide what to do with failures that occur. The
+quickest solution would be to log them, then ignore them:</p>
+<pre class="highlight swift"><code>    <span class="o">.</span><span class="nf">flatMap</span><span class="p">(</span><span class="o">.</span><span class="n">latest</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SignalProducer</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Data</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">),</span> <span class="kt">AnyError</span><span class="o">&gt;</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="nf">makeSearchRequest</span><span class="p">(</span><span class="nv">escapedQuery</span><span class="p">:</span> <span class="n">query</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">reactive</span>
+            <span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">flatMapError</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Network error occurred: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kt">SignalProducer</span><span class="o">.</span><span class="n">empty</span>
+            <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre>
+
+<p>By replacing failures with the <code>empty</code> event stream, we’re able to effectively
+ignore them.</p>
+
+<p>However, it’s probably more appropriate to retry at least a couple of times
+before giving up. Conveniently, there’s a <a href="basicoperators.html#retrying"><code>retry</code></a> operator to do exactly that!</p>
+
+<p>Our improved <code>searchResults</code> producer might look like this:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">searchResults</span> <span class="o">=</span> <span class="n">searchStrings</span>
+    <span class="o">.</span><span class="nf">flatMap</span><span class="p">(</span><span class="o">.</span><span class="n">latest</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SignalProducer</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Data</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">),</span> <span class="kt">AnyError</span><span class="o">&gt;</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="nf">makeSearchRequest</span><span class="p">(</span><span class="nv">escapedQuery</span><span class="p">:</span> <span class="n">query</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">reactive</span>
+            <span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">retry</span><span class="p">(</span><span class="nv">upTo</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">flatMapError</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Network error occurred: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kt">SignalProducer</span><span class="o">.</span><span class="n">empty</span>
+            <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SearchResult</span><span class="p">]</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span>
+        <span class="k">return</span> <span class="k">self</span><span class="o">.</span><span class="nf">searchResults</span><span class="p">(</span><span class="nv">fromJSONString</span><span class="p">:</span> <span class="n">string</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="o">.</span><span class="nf">observe</span><span class="p">(</span><span class="nv">on</span><span class="p">:</span> <span class="kt">UIScheduler</span><span class="p">())</span>
+</code></pre>
+<h4 id='throttling-requests' class='heading'>Throttling requests</h4>
+
+<p>Now, let’s say you only want to actually perform the search periodically,
+to minimize traffic.</p>
+
+<p>ReactiveCocoa has a declarative <code>throttle</code> operator that we can apply to our
+search strings:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">searchStrings</span> <span class="o">=</span> <span class="n">textField</span><span class="o">.</span><span class="n">reactive</span><span class="o">.</span><span class="n">continuousTextValues</span>
+    <span class="o">.</span><span class="nf">throttle</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="nv">on</span><span class="p">:</span> <span class="kt">QueueScheduler</span><span class="o">.</span><span class="n">main</span><span class="p">)</span>
+</code></pre>
+
+<p>This prevents values from being sent less than 0.5 seconds apart.</p>
+
+<p>To do this manually would require significant state, and end up much harder to
+read! With ReactiveCocoa, we can use just one operator to incorporate <em>time</em> into
+our event stream.</p>
+<h4 id='debugging-event-streams' class='heading'>Debugging event streams</h4>
+
+<p>Due to its nature, a stream&rsquo;s stack trace might have dozens of frames, which, more often than not, can make debugging a very frustrating activity.
+A naive way of debugging, is by injecting side effects into the stream, like so:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">searchString</span> <span class="o">=</span> <span class="n">textField</span><span class="o">.</span><span class="n">reactive</span><span class="o">.</span><span class="n">continuousTextValues</span>
+    <span class="o">.</span><span class="nf">throttle</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="nv">on</span><span class="p">:</span> <span class="kt">QueueScheduler</span><span class="o">.</span><span class="n">main</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">on</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="p">{</span> <span class="nf">print</span> <span class="p">(</span><span class="nv">$0</span><span class="p">)</span> <span class="p">})</span> <span class="c1">// the side effect</span>
+</code></pre>
+
+<p>This will print the stream&rsquo;s <a href="reactiveprimitives.html#event-the-basic-transfer-unit-of-an-event-stream">events</a>, while preserving the original stream behaviour. Both <a href="reactiveprimitives.html#signalproducer-deferred-work-that-creates-a-stream-of-values"><code>SignalProducer</code></a>
+and <a href="reactiveprimitives.html#signal-a-unidirectional-stream-of-events"><code>Signal</code></a> provide the <code>logEvents</code> operator, that will do this automatically for you:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">searchString</span> <span class="o">=</span> <span class="n">textField</span><span class="o">.</span><span class="n">reactive</span><span class="o">.</span><span class="n">continuousTextValues</span>
+    <span class="o">.</span><span class="nf">throttle</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="nv">on</span><span class="p">:</span> <span class="kt">QueueScheduler</span><span class="o">.</span><span class="n">main</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">logEvents</span><span class="p">()</span>
+</code></pre>
+
+<p>For more information and advance usage, check the <a href="debuggingtechniques.html">Debugging Techniques</a> document.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2017-06-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
