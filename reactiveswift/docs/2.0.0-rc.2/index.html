@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReactiveSwift  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="ReactiveSwift  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Freactivecocoa%2Eio%2Freactiveswift%2Fdocs%2FReactiveSwift%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="img/carat.png" />
+      ReactiveSwift  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="reactiveprimitives.html">ReactivePrimitives</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="exampleonlinesearch.html">Example.OnlineSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="rxcomparison.html">RxComparison</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Advanced Topics.html">Advanced Topics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="apicontracts.html">APIContracts</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal/Observer.html">– Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty/Decision.html">– Decision</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty/Result.html">– Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ActionError.html">ActionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Bindings.html#/s:P13ReactiveSwift13BindingSource">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BindingTargetProvider.html">BindingTargetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Scheduler Protocols.html">Scheduler Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html#/s:CC13ReactiveSwift8Lifetime5Token">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Debugging.html#/s:13ReactiveSwift11EventLogger">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Debugging.html#/s:O13ReactiveSwift12LoggingEvent">LoggingEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html#/s:VV13ReactiveSwift3Bag5Token">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag/Iterator.html">– Iterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="frameworkoverview.html">FrameworkOverview</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <p align="center">
+    <a href="https://github.com/ReactiveCocoa/ReactiveSwift/"><img src="Logo/PNG/logo-Swift.png" alt="ReactiveSwift" /></a><br /><br />
+    Streams of values over time. Tailored for Swift.<br /><br />
+    <a href="http://reactivecocoa.io/reactiveswift/docs/latest/"><img src="Logo/PNG/Docs.png" alt="Latest ReactiveSwift Documentation" width="143" height="40" /></a> <a href="http://reactivecocoa.io/slack/"><img src="Logo/PNG/JoinSlack.png" alt="Join the ReactiveSwift Slack community." width="143" height="40" /></a>
+</p>
+
+<p><br /></p>
+
+<p><a href="#carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a> <a href="#cocoapods"><img src="https://img.shields.io/cocoapods/v/ReactiveSwift.svg" alt="CocoaPods compatible"></a> <a href="#swift-package-manager"><img src="https://img.shields.io/badge/SwiftPM-compatible-orange.svg" alt="SwiftPM compatible"></a> <a href="https://github.com/ReactiveCocoa/ReactiveSwift/releases"><img src="https://img.shields.io/github/release/ReactiveCocoa/ReactiveSwift.svg" alt="GitHub release"></a> <img src="https://img.shields.io/badge/Swift-3.0.x-orange.svg" alt="Swift 3.0.x"> <img src="https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg" alt="platforms"></p>
+
+<p>☕️ <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/#readme">Looking for Cocoa extensions?</a>
+🎉 <a href="#getting-started">Getting Started</a>
+⚠️ <a href="https://github.com/ReactiveCocoa/ReactiveCocoa/tree/v4.0.0">Still using Swift 2.x?</a></p>
+
+<p>🚄 <a href="#release-roadmap">Release Roadmap</a></p>
+<h2 id='what-is-reactiveswift' class='heading'>What is ReactiveSwift?</h2>
+
+<p><strong>ReactiveSwift</strong> offers composable, declarative and flexible primitives that are built around the grand concept of <strong><em>streams of values over time</em></strong>.</p>
+
+<p>These primitives can be used to uniformly represent common Cocoa and generic programming patterns that are fundamentally an act of observation, e.g. delegate pattern, callback closures, notifications, control actions, responder chain events, <a href="https://en.wikipedia.org/wiki/Futures_and_promises">futures/promises</a> and <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html">key-value observing</a> (KVO).</p>
+
+<p>Because all of these different mechanisms can be represented in the <em>same</em> way,
+it’s easy to declaratively compose them together, with less spaghetti
+code and state to bridge the gap.</p>
+<h2 id='getting-started' class='heading'>Getting Started</h2>
+
+<ol>
+<li><strong><a href="reactiveprimitives.html">Core Reactive Primitives</a></strong></li>
+</ol>
+
+<p>An overview of the semantics and example use cases of the ReactiveSwift primitives, including <a href="reactiveprimitives.html#signal-a-unidirectional-stream-of-events"><code>Signal</code></a>, <a href="reactiveprimitives.html#signalproducer-deferred-work-that-creates-a-stream-of-values"><code>SignalProducer</code></a>, <a href="reactiveprimitives.html#property-an-observable-box-that-always-holds-a-value"><code>Property</code></a> and <a href="reactiveprimitives.html#action-a-serialized-worker-with-a-preset-action"><code>Action</code></a>.</p>
+
+<ol>
+<li><strong><a href="basicoperators.html">Basic Operators</a></strong></li>
+</ol>
+
+<p>An overview of the operators provided to compose and transform streams of values.</p>
+
+<ol>
+<li><strong><a href="rxcomparison.html">How does ReactiveSwift relate to RxSwift?</a></strong></li>
+</ol>
+
+<p>An overview of how ReactiveSwift differs from RxSwift for Swift idiomaticity.</p>
+<h2 id='examples' class='heading'>Examples</h2>
+
+<ol>
+<li><p><strong>Interactive Form UI</strong></p>
+
+<p>ReactiveSwift includes a <a href="https://github.com/ReactiveCocoa/ReactiveSwift/blob/master/ReactiveSwift-UIExamples.playground/Pages/ValidatingProperty.xcplaygroundpage/Contents.swift"><em>UI Examples</em> playground</a>, which demonstrates:</p>
+
+<ul>
+<li>how to build an interactive form UI with bindings, properties and <code>Action</code>s, with a live view in action.</li>
+<li>how to use reactive primitives to implement the Model-View-ViewModel architectural pattern, with the View Model being the source of truth for the View.</li>
+</ul></li>
+<li><p><strong><a href="example.onlinesearch.html">Online Searching</a></strong></p></li>
+</ol>
+<h2 id='advanced-topics' class='heading'>Advanced Topics</h2>
+
+<ol>
+<li><strong><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/#readme">ReactiveCocoa</a></strong></li>
+</ol>
+
+<p>Bindings and reactive extensions for Cocoa and Cocoa Touch frameworks are offered separately as ReactiveCocoa.</p>
+
+<ol>
+<li><p><strong><a href="http://reactivecocoa.io/reactiveswift/docs/latest/">API Reference</a></strong></p></li>
+<li><p><strong><a href="apicontracts.html">API Contracts</a></strong></p></li>
+</ol>
+
+<p>Contracts of the ReactiveSwift primitives, Best Practices with ReactiveSwift, and Guidelines on implementing custom operators.</p>
+
+<ol>
+<li><strong><a href="debuggingtechniques.html">Debugging Techniques</a></strong></li>
+</ol>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>ReactiveSwift supports macOS 10.9+, iOS 8.0+, watchOS 2.0+, tvOS 9.0+ and Linux.</p>
+<h4 id='carthage' class='heading'>Carthage</h4>
+
+<p>If you use <a href="https://github.com/Carthage/Carthage/#readme">Carthage</a> to manage your dependencies, simply add
+ReactiveSwift to your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "ReactiveCocoa/ReactiveSwift" ~&gt; 1.1
+</code></pre>
+
+<p>If you use Carthage to build your dependencies, make sure you have added <code>ReactiveSwift.framework</code>, and <code>Result.framework</code> to the <q>_Linked Frameworks and Libraries_</q> section of your target, and have included them in your Carthage framework copying build phase.</p>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+
+<p>If you use <a href="https://cocoapods.org/">CocoaPods</a> to manage your dependencies, simply add
+ReactiveSwift to your <code>Podfile</code>:</p>
+<pre class="highlight plaintext"><code>pod 'ReactiveSwift', '~&gt; 1.1'
+</code></pre>
+<h4 id='swift-package-manager' class='heading'>Swift Package Manager</h4>
+
+<p>If you use Swift Package Manager, simply add ReactiveSwift as a dependency
+of your package in <code>Package.swift</code>:</p>
+<pre class="highlight plaintext"><code>.Package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", majorVersion: 1)
+</code></pre>
+<h4 id='git-submodule' class='heading'>Git submodule</h4>
+
+<ol>
+<li>Add the ReactiveSwift repository as a <a href="https://git-scm.com/docs/git-submodule">submodule</a> of your
+application’s repository.</li>
+<li>Run <code>git submodule update --init --recursive</code> from within the ReactiveCocoa folder.</li>
+<li>Drag and drop <code>ReactiveSwift.xcodeproj</code> and
+<code>Carthage/Checkouts/Result/Result.xcodeproj</code> into your application’s Xcode
+project or workspace.</li>
+<li>On the “General” tab of your application target’s settings, add
+<code>ReactiveSwift.framework</code>, and <code>Result.framework</code>
+to the “Embedded Binaries” section.</li>
+<li>If your application target does not contain Swift code at all, you should also
+set the <code>EMBEDDED_CONTENT_CONTAINS_SWIFT</code> build setting to “Yes”.</li>
+</ol>
+<h2 id='playground' class='heading'>Playground</h2>
+
+<p>We also provide a great Playground, so you can get used to ReactiveCocoa&rsquo;s operators. In order to start using it:</p>
+
+<ol>
+<li>Clone the ReactiveSwift repository.</li>
+<li>Retrieve the project dependencies using one of the following terminal commands from the ReactiveSwift project root directory:
+
+<ul>
+<li><code>git submodule update --init --recursive</code> <strong>OR</strong>, if you have <a href="https://github.com/Carthage/Carthage/#readme">Carthage</a> installed<br></li>
+<li><code>carthage checkout</code></li>
+</ul></li>
+<li>Open <code>ReactiveSwift.xcworkspace</code></li>
+<li>Build <code>Result-Mac</code> scheme</li>
+<li>Build <code>ReactiveSwift-macOS</code> scheme</li>
+<li>Finally open the <code>ReactiveSwift.playground</code></li>
+<li>Choose <code>View &gt; Show Debug Area</code></li>
+</ol>
+<h2 id='have-a-question' class='heading'>Have a question?</h2>
+
+<p>If you need any help, please visit our <a href="https://github.com/ReactiveCocoa/ReactiveSwift/issues?q=is%3Aissue+label%3Aquestion+">GitHub issues</a> or <a href="http://stackoverflow.com/questions/tagged/reactive-cocoa">Stack Overflow</a>. Feel free to file an issue if you do not manage to find any solution from the archives.</p>
+<h2 id='release-roadmap' class='heading'>Release Roadmap</h2>
+
+<p><strong>Current Stable Release:</strong><br /><a href="https://github.com/ReactiveCocoa/ReactiveSwift/releases"><img src="https://img.shields.io/github/release/ReactiveCocoa/ReactiveSwift.svg" alt="GitHub release"></a></p>
+<h3 id='in-development' class='heading'>In Development</h3>
+<h4 id='reactiveswift-2-0' class='heading'>ReactiveSwift 2.0</h4>
+
+<p>It targets Swift 3.1. The estimated schedule is WWDC 2017.</p>
+
+<p>The primary goal of ReactiveSwift 2.0 is to take advantage of <strong>concrete same-type requirements</strong> introduced in Swift 3.1. As a result:</p>
+
+<ol>
+<li>A few single-implementation protocols were removed; and</li>
+<li><code>Signal</code> and <code>SignalProducer</code> operators were moved from the protocols to the concrete types.</li>
+</ol>
+
+<p>These changes are source breaking, but are automatically or trivially migratable.</p>
+
+<p>ReactiveSwift 2.0 has continued the work in polishing the APIs, preparing for the eventual API freeze for library resilience.</p>
+<h4 id='swift-3-2-and-swift-4-0-compatibility' class='heading'>Swift 3.2 and Swift 4.0 compatibility</h4>
+
+<p>While the development would be Swift 3.2 and Swift 4.0 aware, ReactiveSwift 2.0 would not declare official support until Swift 3.2 and Swift 4.0 launch.</p>
+
+<p>The official release for Swift 3.2 and Swift 4.0 is expected to be a minor 2.x release with full API compatibility.</p>
+<h3 id='plan-of-record' class='heading'>Plan of Record</h3>
+<h4 id='reactiveswift-3-0' class='heading'>ReactiveSwift 3.0</h4>
+
+<p>ReactiveSwift 3.0 is expected to declare library ABI stability as it adopts generics features arriving in a later Swift 4 release, e.g. conditional conformance. There is no ETA for now.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2017-07-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
