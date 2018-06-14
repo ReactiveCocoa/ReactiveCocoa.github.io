@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RxComparison  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="RxComparison  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Freactivecocoa%2Eio%2Freactiveswift%2Fdocs%2FReactiveSwift%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="img/carat.png" />
+      RxComparison  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="reactiveprimitives.html">ReactivePrimitives</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="exampleonlinesearch.html">Example.OnlineSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="rxcomparison.html">RxComparison</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Advanced Topics.html">Advanced Topics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="apicontracts.html">APIContracts</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Signal/Observer.html">– Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty/Decision.html">– Decision</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ValidatingProperty/Result.html">– Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/ActionError.html">ActionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Bindings.html#/s:13ReactiveSwift13BindingSourceP">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BindingTargetProvider.html">BindingTargetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Scheduler Protocols.html">Scheduler Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Lifetime.html#/s:13ReactiveSwift8LifetimeC5TokenC">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Debugging.html#/s:13ReactiveSwift11EventLoggera">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Debugging.html#/s:13ReactiveSwift12LoggingEventO">LoggingEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag.html#/s:13ReactiveSwift3BagV5TokenV">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Bag/Iterator.html">– Iterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="frameworkoverview.html">FrameworkOverview</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Result.html">Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='how-does-reactiveswift-relate-to-rxswift' class='heading'>How does ReactiveSwift relate to RxSwift?</h1>
+
+<p>RxSwift is a Swift implementation of the <a href="https://reactivex.io/">ReactiveX</a> (Rx) APIs. While ReactiveCocoa
+was inspired and heavily influenced by Rx, ReactiveSwift is an opinionated
+implementation of <a href="https://en.wikipedia.org/wiki/Functional_reactive_programming">functional reactive programming</a>, and <em>intentionally</em> not a
+direct port like <a href="https://github.com/ReactiveX/RxSwift/#readme">RxSwift</a>.</p>
+
+<p>ReactiveSwift differs from RxSwift/ReactiveX where doing so:</p>
+
+<ul>
+<li>Results in a simpler API</li>
+<li>Addresses common sources of confusion</li>
+<li>Matches closely to Swift, and sometimes Cocoa, conventions</li>
+</ul>
+
+<p>The following are a few important differences, along with their rationales.</p>
+<h3 id='signals-and-signalproducers-hot-and-cold-observables' class='heading'>Signals and SignalProducers (“hot” and “cold” observables)</h3>
+
+<p>One of the most confusing aspects of Rx is that of <a href="http://www.introtorx.com/content/v1.0.10621.0/14_HotAndColdObservables.html">“hot”, “cold”, and “warm”
+                                                    observables</a> (event streams).</p>
+
+<p>In short, given just a method or function declaration like this, in C#:</p>
+<pre class="highlight csharp"><code><span class="n">IObservable</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="nf">Search</span><span class="p">(</span><span class="kt">string</span> <span class="n">query</span><span class="p">)</span>
+</code></pre>
+
+<p>… it is <strong>impossible to tell</strong> whether subscribing to (observing) that
+<code>IObservable</code> will involve side effects. If it <em>does</em> involve side effects, it’s
+also impossible to tell whether <em>each subscription</em> has a side effect, or if only
+the first one does.</p>
+
+<p>This example is contrived, but it demonstrates <strong>a real, pervasive problem</strong>
+that makes it extremely hard to understand Rx code (and pre-3.0 ReactiveCocoa
+code) at a glance.</p>
+
+<p><strong>ReactiveSwift</strong> addresses this by distinguishing side effects with the separate
+<a href="FrameworkOverview.md#signals"><code><a href="Classes/Signal.html">Signal</a></code></a> and <a href="FrameworkOverview.md#signal-producers"><code><a href="Structs/SignalProducer.html">SignalProducer</a></code></a> types. Although this
+means there’s another type to learn about, it improves code clarity and helps
+communicate intent much better.</p>
+
+<p>In other words, <strong>ReactiveSwift’s changes here are <a href="http://www.infoq.com/presentations/Simple-Made-Easy">simple, not
+easy</a></strong>.</p>
+<h3 id='typed-errors' class='heading'>Typed errors</h3>
+
+<p>When <a href="FrameworkOverview.md#signals">Signals</a> and <a href="FrameworkOverview.md#signal-producers">SignalProducers</a> are allowed to <a href="FrameworkOverview.md#events">fail</a> in ReactiveSwift,
+the kind of error must be specified in the type system. For example,
+<code>Signal&lt;Int, AnyError&gt;</code> is a signal of integer values that may fail with an error
+of type <code>AnyError</code>.</p>
+
+<p>More importantly, RAC allows the special type <code>NoError</code> to be used instead,
+which <em>statically guarantees</em> that an event stream is not allowed to send a
+failure. <strong>This eliminates many bugs caused by unexpected failure events.</strong></p>
+
+<p>In Rx systems with types, event streams only specify the type of their
+values—not the type of their errors—so this sort of guarantee is impossible.</p>
+<h3 id='naming' class='heading'>Naming</h3>
+
+<p>In most versions of Rx, Streams over time are known as <code>Observable</code>s, which
+parallels the <code>Enumerable</code> type in .NET. Additionally, most operations in Rx.NET
+borrow names from <a href="https://msdn.microsoft.com/en-us/library/bb397926.aspx">LINQ</a>,
+which uses terms reminiscent of relational databases, like <code>Select</code> and <code>Where</code>.</p>
+
+<p><strong>ReactiveSwift</strong>, on the other hand, focuses on being a native Swift citizen
+first and foremost, following the <a href="https://swift.org/documentation/api-design-guidelines/">Swift API Guidelines</a> as appropriate. Other
+naming differences are typically inspired by significantly better alternatives
+from <a href="https://www.haskell.org">Haskell</a> or <a href="http://elm-lang.org">Elm</a> (which is the primary source for the “signal” terminology).</p>
+<h3 id='ui-programming' class='heading'>UI programming</h3>
+
+<p>Rx is basically agnostic as to how it’s used. Although UI programming with Rx is
+very common, it has few features tailored to that particular case.</p>
+
+<p>ReactiveSwift takes a lot of inspiration from <a href="http://reactiveui.net/">ReactiveUI</a>,
+including the basis for <a href="FrameworkOverview.md#actions">Actions</a>.</p>
+
+<p>Unlike ReactiveUI, which unfortunately cannot directly change Rx to make it more
+friendly for UI programming, <strong>ReactiveSwift has been improved many times
+specifically for this purpose</strong>—even when it means diverging further from Rx.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2018-06-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Property Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/Property" class="dashAnchor"></a>
+
+    <a title="Property Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Freactivecocoa%2Eio%2Freactiveswift%2Fdocs%2FReactiveSwift%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Property Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../reactiveprimitives.html">ReactivePrimitives</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../exampleonlinesearch.html">Example.OnlineSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../rxcomparison.html">RxComparison</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Advanced Topics.html">Advanced Topics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../apicontracts.html">APIContracts</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal/Observer.html">– Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty/Decision.html">– Decision</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty/Result.html">– Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionError.html">ActionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Bindings.html#/s:13ReactiveSwift13BindingSourceP">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BindingTargetProvider.html">BindingTargetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Scheduler Protocols.html">Scheduler Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html#/s:13ReactiveSwift8LifetimeC5TokenC">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Debugging.html#/s:13ReactiveSwift11EventLoggera">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Debugging.html#/s:13ReactiveSwift12LoggingEventO">LoggingEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag.html#/s:13ReactiveSwift3BagV5TokenV">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag/Iterator.html">– Iterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../frameworkoverview.html">FrameworkOverview</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Result.html">Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Property</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Property</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PropertyProtocol.html">PropertyProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A read-only property that can be observed for its changes over time. There
+are three categories of read-only properties:</p>
+<h1 id='constant-property' class='heading'>Constant property</h1>
+
+<p>Created by <code>Property(value:)</code>, the producer and signal of a constant
+property would complete immediately when it is initialized.</p>
+<h1 id='existential-property' class='heading'>Existential property</h1>
+
+<p>Created by <code>Property(capturing:)</code>, it wraps any arbitrary <code><a href="../Protocols/PropertyProtocol.html">PropertyProtocol</a></code>
+types, and passes through the behavior. Note that it would retain the
+wrapped property.</p>
+
+<p>Existential property would be deprecated when generalized existential
+eventually lands in Swift.</p>
+<h1 id='composed-property' class='heading'>Composed property</h1>
+
+<p>A composed property presents a composed view of its sources, which can be
+one or more properties, a producer, or a signal. It can be created using
+property composition operators, <code>Property(_:)</code> or <code>Property(initial:then:)</code>.</p>
+
+<p>It does not own its lifetime, and its producer and signal are bound to the
+lifetime of its sources. It also does not have an influence on its sources,
+so retaining a composed property would not prevent its sources from
+deinitializing.</p>
+
+<p>Note that composed properties do not retain any of its sources.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyC5valuexvp"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyC5valuexvp">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current value of the property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyC8producerAA14SignalProducerVyx6Result7NoErrorOGvp"></a>
+                    <a name="//apple_ref/swift/Property/producer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyC8producerAA14SignalProducerVyx6Result7NoErrorOGvp">producer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A producer for Signals that will send the property&rsquo;s current
+value, followed by all changes over time, then complete when the
+property has deinitialized or has no further changes.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If <code>self</code> is a composed property, the producer would be
+    bound to the lifetime of its sources.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">producer</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignalProducer.html">SignalProducer</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">NoError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyC6signalAA6SignalCyx6Result7NoErrorOGvp"></a>
+                    <a name="//apple_ref/swift/Property/signal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyC6signalAA6SignalCyx6Result7NoErrorOGvp">signal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A signal that will send the property&rsquo;s changes over time, then
+complete when the property has deinitialized or has no further changes.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If <code>self</code> is a composed property, the signal would be
+    bound to the lifetime of its sources.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">signal</span><span class="p">:</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">NoError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCACyxGx5value_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCACyxGx5value_tcfc">init(value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a constant property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>property</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value of the constant property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCACyxGqd__9capturing_tc5ValueQyd__RszAA0C8ProtocolRd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(capturing:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCACyxGqd__9capturing_tc5ValueQyd__RszAA0C8ProtocolRd__lufc">init(capturing:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an existential property which wraps the given property.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The resulting property retains the given property.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">capturing</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">P</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Value</span> <span class="o">==</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">P</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PropertyProtocol.html">PropertyProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>property</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A property to be wrapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCACyxGqd__c5ValueQyd__RszAA0C8ProtocolRd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCACyxGqd__c5ValueQyd__RszAA0C8ProtocolRd__lufc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a composed property which reflects the given property.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The resulting property does not retain the given property.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">P</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Value</span> <span class="o">==</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">P</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PropertyProtocol.html">PropertyProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>property</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A property to be wrapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCACyxGx7initial_AA14SignalProducerVyx6Result7NoErrorOG4thentcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(initial:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCACyxGx7initial_AA14SignalProducerVyx6Result7NoErrorOG4thentcfc">init(initial:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a composed property that first takes on <code>initial</code>, then each
+value sent on a signal created by <code><a href="../Classes/Property.html#/s:13ReactiveSwift8PropertyC8producerAA14SignalProducerVyx6Result7NoErrorOGvp">producer</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">initial</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">then</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignalProducer.html">SignalProducer</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">NoError</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initial</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Starting value for the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A producer that will start immediately and send values to
+    the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCACyxGx7initial_qd__4thentc5ValueQyd__RszAA25SignalProducerConvertibleRd__6Result7NoErrorO0L0Rtd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(initial:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCACyxGx7initial_qd__4thentc5ValueQyd__RszAA25SignalProducerConvertibleRd__6Result7NoErrorO0L0Rtd__lufc">init(initial:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a composed property that first takes on <code>initial</code>, then each
+value sent on a signal created by <code><a href="../Classes/Property.html#/s:13ReactiveSwift8PropertyC8producerAA14SignalProducerVyx6Result7NoErrorOGvp">producer</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">Values</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">initial</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">then</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">Values</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Value</span> <span class="o">==</span> <span class="kt">Values</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Values</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a></span><span class="p">,</span> <span class="kt">Values</span><span class="o">.</span><span class="kt">Error</span> <span class="o">==</span> <span class="kt">NoError</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initial</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Starting value for the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A producer that will start immediately and send values to
+    the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCA2A16OptionalProtocolRzlEACyxGx7initial_AA14SignalProducerVy7WrappedQz6Result7NoErrorOG4thentcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(initial:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCA2A16OptionalProtocolRzlEACyxGx7initial_AA14SignalProducerVy7WrappedQz6Result7NoErrorOG4thentcfc">init(initial:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a composed property that first takes on <code>initial</code>, then each
+value sent on a signal created by <code><a href="../Classes/Property.html#/s:13ReactiveSwift8PropertyC8producerAA14SignalProducerVyx6Result7NoErrorOGvp">producer</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">initial</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">then</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignalProducer.html">SignalProducer</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">.</span><span class="kt">Wrapped</span><span class="p">,</span> <span class="kt">NoError</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initial</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Starting value for the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A producer that will start immediately and send values to
+    the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift8PropertyCA2A16OptionalProtocolRzlEACyxGx7initial_qd__4thentcAA25SignalProducerConvertibleRd__5ValueQyd__7WrappedRtz6Result7NoErrorO0O0Rtd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(initial:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift8PropertyCA2A16OptionalProtocolRzlEACyxGx7initial_qd__4thentcAA25SignalProducerConvertibleRd__5ValueQyd__7WrappedRtz6Result7NoErrorO0O0Rtd__lufc">init(initial:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a composed property that first takes on <code>initial</code>, then each
+value sent on a signal created by <code><a href="../Classes/Property.html#/s:13ReactiveSwift8PropertyC8producerAA14SignalProducerVyx6Result7NoErrorOGvp">producer</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">Values</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">initial</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">then</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">Values</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Values</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a></span><span class="p">,</span> <span class="kt">Value</span><span class="o">.</span><span class="kt">Wrapped</span> <span class="o">==</span> <span class="kt">Values</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Values</span><span class="o">.</span><span class="kt">Error</span> <span class="o">==</span> <span class="kt">NoError</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initial</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Starting value for the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A producer that will start immediately and send values to
+    the property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2018-06-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
