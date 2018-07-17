@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PropertyProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/PropertyProtocol" class="dashAnchor"></a>
+
+    <a title="PropertyProtocol Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ReactiveSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ReactiveCocoa/ReactiveSwift/">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Freactivecocoa%2Eio%2Freactiveswift%2Fdocs%2FReactiveSwift%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ReactiveSwift Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      PropertyProtocol Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Getting Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../reactiveprimitives.html">ReactivePrimitives</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../basicoperators.html">BasicOperators</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../exampleonlinesearch.html">Example.OnlineSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../rxcomparison.html">RxComparison</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Advanced Topics.html">Advanced Topics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../apicontracts.html">APIContracts</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../debuggingtechniques.html">DebuggingTechniques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Signal.html">Signal</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal.html">Signal</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Signal/Observer.html">– Observer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FlattenStrategy.html">FlattenStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../SignalProducer.html">SignalProducer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SignalProducer.html">SignalProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProducerProtocol.html">SignalProducerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Property.html">Property</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Property.html">Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MutableProperty.html">MutableProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MutablePropertyProtocol.html">MutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty.html">ValidatingProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty/Decision.html">– Decision</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ValidatingProperty/Result.html">– Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Action.html">Action</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionError.html">ActionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Bindings.html">Bindings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Bindings.html#/s:13ReactiveSwift13BindingSourceP">BindingSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BindingTarget.html">BindingTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BindingTargetProvider.html">BindingTargetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Scheduler Protocols.html">Scheduler Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DateScheduler.html">DateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Scheduler.html">Scheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Schedulers.html">Schedulers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ImmediateScheduler.html">ImmediateScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/QueueScheduler.html">QueueScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestScheduler.html">TestScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UIScheduler.html">UIScheduler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Reactive Extensions.html">Reactive Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ReactiveExtensionsProvider.html">ReactiveExtensionsProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Lifetime.html">Lifetime</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html">Lifetime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Lifetime.html#/s:13ReactiveSwift8LifetimeC5TokenC">– Token</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Disposable.html">Disposable</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AnyDisposable.html">AnyDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Disposable.html">Disposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CompositeDisposable.html">CompositeDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ScopedDisposable.html">ScopedDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SerialDisposable.html">SerialDisposable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Debugging.html#/s:13ReactiveSwift11EventLoggera">EventLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Debugging.html#/s:13ReactiveSwift12LoggingEventO">LoggingEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag.html">Bag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag.html#/s:13ReactiveSwift3BagV5TokenV">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Bag/Iterator.html">– Iterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OptionalProtocol.html">OptionalProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../frameworkoverview.html">FrameworkOverview</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Result.html">Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ComposableMutablePropertyProtocol.html">ComposableMutablePropertyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EventProtocol.html">EventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SignalProducerConvertible.html">SignalProducerConvertible</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>PropertyProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PropertyProtocol</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">,</span> <span class="kt"><a href="../Bindings.html#/s:13ReactiveSwift13BindingSourceP">BindingSource</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a property that allows observation of its changes.</p>
+
+<p>Only classes can conform to this protocol, because having a signal
+for changes over time implies the origin must have a unique identity.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current value of the property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolP8producerAA14SignalProducerVy5ValueQz6Result7NoErrorOGvp"></a>
+                    <a name="//apple_ref/swift/Property/producer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolP8producerAA14SignalProducerVy5ValueQz6Result7NoErrorOGvp">producer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The values producer of the property.</p>
+
+<p>It produces a signal that sends the property&rsquo;s current value,
+followed by all changes over time. It completes when the property
+has deinitialized, or has no further change.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If <code>self</code> is a composed property, the producer would be
+    bound to the lifetime of its sources.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">producer</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignalProducer.html">SignalProducer</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">NoError</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolP6signalAA6SignalCy5ValueQz6Result7NoErrorOGvp"></a>
+                    <a name="//apple_ref/swift/Property/signal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolP6signalAA6SignalCy5ValueQz6Result7NoErrorOGvp">signal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A signal that will send the property&rsquo;s changes over time. It
+completes when the property has deinitialized, or has no further
+change.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If <code>self</code> is a composed property, the signal would be
+    bound to the lifetime of its sources.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">signal</span><span class="p">:</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">NoError</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3mapAA0C0Cyqd__Gqd__5ValueQzclF"></a>
+                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3mapAA0C0Cyqd__Gqd__5ValueQzclF">map(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps the current value and all subsequent values to a new property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that will map the current <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp">value</a></code> of this
+       <code><a href="../Classes/Property.html">Property</a></code> to a new value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds a mapped value from <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3mapAA0C0Cyqd__Gqd__5value_tlF"></a>
+                    <a name="//apple_ref/swift/Method/map(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3mapAA0C0Cyqd__Gqd__5value_tlF">map(value:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Map the current value and all susequent values to a new constant property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A new value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds a mapped value from <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3mapAA0C0Cyqd__Gs7KeyPathCy5ValueQzqd__GlF"></a>
+                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3mapAA0C0Cyqd__Gs7KeyPathCy5ValueQzqd__GlF">map(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps the current value and all subsequent values to a new property
+by applying a key path.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">U</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key path relative to the property&rsquo;s <code>Value</code> type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds a mapped value from <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE6filterAA0C0Cy5ValueQzGAH7initial_SbAHctF"></a>
+                    <a name="//apple_ref/swift/Method/filter(initial:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE6filterAA0C0Cy5ValueQzGAH7initial_SbAHctF">filter(initial:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Passes only the values of the property that pass the given predicate
+to a new property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="nv">initial</span><span class="p">:</span> <span class="kt">Value</span><span class="p">,</span> <span class="n">_</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initial</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Classes/Property.html">Property</a></code> always needs a <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp">value</a></code>. The initial <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp">value</a></code> is necessary in case the
+     predicate excludes the first (or all) <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp">value</a></code>s of this <code><a href="../Classes/Property.html">Property</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that accepts value and returns <code>Bool</code> denoting
+       whether current <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolP5value5ValueQzvp">value</a></code> of this <code><a href="../Classes/Property.html">Property</a></code>  has passed the test.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds only values from <code>self</code> passing the given predicate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the current value and the subsequent values of two <code><a href="../Classes/Property.html">Property</a></code>s in
+the manner described by <code><a href="../Classes/Signal.html#/s:13ReactiveSwift6SignalC13combineLatestACyx_qd__tq_GACyqd__q_G4with_tlF">Signal.combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">with</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">P</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">P</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A property to combine <code>self</code>&lsquo;s value with.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds a tuple containing values of <code>self</code> and
+       the given property.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/zip(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the current value and the subsequent values of two <code><a href="../Classes/Property.html">Property</a></code>s in
+the manner described by <code>Signal.zipWith</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">with</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">P</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">P</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A property to zip <code>self</code>&lsquo;s value with.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds a tuple containing values of <code>self</code> and
+       the given property.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE15combinePreviousAA0C0Cy5ValueQz_AHtGAHF"></a>
+                    <a name="//apple_ref/swift/Method/combinePrevious(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE15combinePreviousAA0C0Cy5ValueQz_AHtGAHF">combinePrevious(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forward events from <code>self</code> with history: values of the returned property
+are a tuple whose first member is the previous value and whose second
+member is the current value. <code>initial</code> is supplied as the first member
+when <code>self</code> sends its first value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">combinePrevious</span><span class="p">(</span><span class="n">_</span> <span class="nv">initial</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initial</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value that will be combined with the first value sent by
+     <code>self</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that holds tuples that contain previous and
+       current values of <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE11skipRepeatsAA0C0Cy5ValueQzGSbAH_AHtcF"></a>
+                    <a name="//apple_ref/swift/Method/skipRepeats(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE11skipRepeatsAA0C0Cy5ValueQzGSbAH_AHtcF">skipRepeats(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forward only values from <code>self</code> that are not considered equivalent to its
+consecutive predecessor.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The first value is always forwarded.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">skipRepeats</span><span class="p">(</span><span class="n">_</span> <span class="nv">isEquivalent</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isEquivalent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure to determine whether two values are equivalent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property which conditionally forwards values from <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAs9Equatable5ValueRpzrlE11skipRepeatsAA0C0CyAFGyF"></a>
+                    <a name="//apple_ref/swift/Method/skipRepeats()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAs9Equatable5ValueRpzrlE11skipRepeatsAA0C0CyAFGyF">skipRepeats()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forward only values from <code>self</code> that are not equal to its consecutive predecessor.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The first value is always forwarded.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">skipRepeats</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property which conditionally forwards values from <code>self</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPA2aB5ValueRpzrlE7flattenAA0C0CyAD_ADQZGAA15FlattenStrategyVF"></a>
+                    <a name="//apple_ref/swift/Method/flatten(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPA2aB5ValueRpzrlE7flattenAA0C0CyAD_ADQZGAA15FlattenStrategyVF">flatten(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flattens the inner property held by <code>self</code> (into a single property of
+values), according to the semantics of the given strategy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">_</span> <span class="nv">strategy</span><span class="p">:</span> <span class="kt"><a href="../Structs/FlattenStrategy.html">FlattenStrategy</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">.</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>strategy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferred flatten strategy.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that sends the values of its inner properties.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE7flatMapAA0C0Cy5ValueQyd__GAA15FlattenStrategyV_qd__AGQzctAaBRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/flatMap(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE7flatMapAA0C0Cy5ValueQyd__GAA15FlattenStrategyV_qd__AGQzctAaBRd__lF">flatMap(_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps each property from <code>self</code> to a new property, then flattens the
+resulting properties (into a single property), according to the
+semantics of the given strategy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">flatMap</span><span class="o">&lt;</span><span class="kt">P</span><span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">strategy</span><span class="p">:</span> <span class="kt"><a href="../Structs/FlattenStrategy.html">FlattenStrategy</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">P</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">P</span><span class="o">.</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>strategy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferred flatten strategy.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The transform to be applied on <code>self</code> before flattening.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that sends the values of its inner properties.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE12uniqueValuesAA0C0Cy5ValueQzGqd__AHcs8HashableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/uniqueValues(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE12uniqueValuesAA0C0Cy5ValueQzGqd__AHcs8HashableRd__lF">uniqueValues(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forward only those values from <code>self</code> that have unique identities across
+the set of all values that have been held.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This causes the identities to be retained to check for 
+    uniqueness.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">uniqueValues</span><span class="o">&lt;</span><span class="kt">Identity</span><span class="p">:</span> <span class="kt">Hashable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Identity</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that accepts a value and returns identity
+       value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that sends unique values during its lifetime.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAs8Hashable5ValueRpzrlE12uniqueValuesAA0C0CyAFGyF"></a>
+                    <a name="//apple_ref/swift/Method/uniqueValues()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAs8Hashable5ValueRpzrlE12uniqueValuesAA0C0CyAFGyF">uniqueValues()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forwards only those values from <code>self</code> that are unique across the set of
+all values that have been seen.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This causes the identities to be retained to check for uniqueness.
+    Providing a function that returns a unique value for each sent
+    value can help you reduce the memory footprint.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">uniqueValues</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that sends unique values during its lifetime.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_tGqd___qd_0_tAaBRd__AaBRd_0_AGQyd__AHRSr0_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_tGqd___qd_0_tAaBRd__AaBRd_0_AGQyd__AHRSr0_lFZ">combineLatest(_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">A</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_tGqd___qd_0_qd_1_tAaBRd__AaBRd_0_AaBRd_1_AGQyd__AHRSr1_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_tGqd___qd_0_qd_1_tAaBRd__AaBRd_0_AaBRd_1_AGQyd__AHRSr1_lFZ">combineLatest(_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_tGqd___qd_0_qd_1_qd_2_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AGQyd__AHRSr2_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_tGqd___qd_0_qd_1_qd_2_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AGQyd__AHRSr2_lFZ">combineLatest(_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_tGqd___qd_0_qd_1_qd_2_qd_3_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AGQyd__AHRSr3_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_tGqd___qd_0_qd_1_qd_2_qd_3_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AGQyd__AHRSr3_lFZ">combineLatest(_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AGQyd__AHRSr4_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AGQyd__AHRSr4_lFZ">combineLatest(_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AGQyd__AHRSr5_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AGQyd__AHRSr5_lFZ">combineLatest(_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AGQyd__AHRSr6_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AGQyd__AHRSr6_lFZ">combineLatest(_:_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">,</span> <span class="n">_</span> <span class="nv">h</span><span class="p">:</span> <span class="kt">H</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">H</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">H</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AGQyd__AHRSr7_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AGQyd__AHRSr7_lFZ">combineLatest(_:_:_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">,</span> <span class="n">_</span> <span class="nv">h</span><span class="p">:</span> <span class="kt">H</span><span class="p">,</span> <span class="n">_</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">I</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">H</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">I</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">H</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_AGQyd_8_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_qd_8_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AaBRd_8_AGQyd__AHRSr8_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_AGQyd_8_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_qd_8_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AaBRd_8_AGQyd__AHRSr8_lFZ">combineLatest(_:_:_:_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given properties, in the manner described
+by <code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">,</span> <span class="n">_</span> <span class="nv">h</span><span class="p">:</span> <span class="kt">H</span><span class="p">,</span> <span class="n">_</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">I</span><span class="p">,</span> <span class="n">_</span> <span class="nv">j</span><span class="p">:</span> <span class="kt">J</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">H</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">I</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">J</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">H</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">J</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0CySay7Element_5ValueQYd__GGSgqd__s8SequenceRd__AabGRpd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/combineLatest(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0CySay7Element_5ValueQYd__GGSgqd__s8SequenceRd__AabGRpd__lFZ">combineLatest(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the values of all the given producers, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE13combineLatestAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">combineLatest(with:)</a></code>. Returns nil if the sequence is empty.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">combineLatest</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">properties</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt">S</span><span class="o">.</span><span class="kt">Iterator</span><span class="o">.</span><span class="kt">Element</span><span class="o">.</span><span class="kt">Value</span><span class="p">]</span><span class="o">&gt;</span><span class="p">?</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_tGqd___qd_0_tAaBRd__AaBRd_0_AGQyd__AHRSr0_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_tGqd___qd_0_tAaBRd__AaBRd_0_AGQyd__AHRSr0_lFZ">zip(_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_tGqd___qd_0_qd_1_tAaBRd__AaBRd_0_AaBRd_1_AGQyd__AHRSr1_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_tGqd___qd_0_qd_1_tAaBRd__AaBRd_0_AaBRd_1_AGQyd__AHRSr1_lFZ">zip(_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_tGqd___qd_0_qd_1_qd_2_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AGQyd__AHRSr2_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_tGqd___qd_0_qd_1_qd_2_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AGQyd__AHRSr2_lFZ">zip(_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_tGqd___qd_0_qd_1_qd_2_qd_3_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AGQyd__AHRSr3_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_tGqd___qd_0_qd_1_qd_2_qd_3_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AGQyd__AHRSr3_lFZ">zip(_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AGQyd__AHRSr4_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AGQyd__AHRSr4_lFZ">zip(_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AGQyd__AHRSr5_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AGQyd__AHRSr5_lFZ">zip(_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AGQyd__AHRSr6_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AGQyd__AHRSr6_lFZ">zip(_:_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">,</span> <span class="n">_</span> <span class="nv">h</span><span class="p">:</span> <span class="kt">H</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">H</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">H</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AGQyd__AHRSr7_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AGQyd__AHRSr7_lFZ">zip(_:_:_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">,</span> <span class="n">_</span> <span class="nv">h</span><span class="p">:</span> <span class="kt">H</span><span class="p">,</span> <span class="n">_</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">I</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">H</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">I</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">H</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_AGQyd_8_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_qd_8_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AaBRd_8_AGQyd__AHRSr8_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd_0_AGQyd_1_AGQyd_2_AGQyd_3_AGQyd_4_AGQyd_5_AGQyd_6_AGQyd_7_AGQyd_8_tGqd___qd_0_qd_1_qd_2_qd_3_qd_4_qd_5_qd_6_qd_7_qd_8_tAaBRd__AaBRd_0_AaBRd_1_AaBRd_2_AaBRd_3_AaBRd_4_AaBRd_5_AaBRd_6_AaBRd_7_AaBRd_8_AGQyd__AHRSr8_lFZ">zip(_:_:_:_:_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">A</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">B</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span> <span class="kt">E</span><span class="p">,</span> <span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">F</span><span class="p">,</span> <span class="n">_</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">G</span><span class="p">,</span> <span class="n">_</span> <span class="nv">h</span><span class="p">:</span> <span class="kt">H</span><span class="p">,</span> <span class="n">_</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">I</span><span class="p">,</span> <span class="n">_</span> <span class="nv">j</span><span class="p">:</span> <span class="kt">J</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">B</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">D</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">F</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">G</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">H</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">I</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">J</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">F</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">G</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">H</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">J</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">A</span><span class="o">.</span><span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0CySay7Element_5ValueQYd__GGSgqd__s8SequenceRd__AabGRpd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/zip(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0CySay7Element_5ValueQYd__GGSgqd__s8SequenceRd__AabGRpd__lFZ">zip(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zips the values of all the given properties, in the manner described by
+<code><a href="../Protocols/PropertyProtocol.html#/s:13ReactiveSwift16PropertyProtocolPAAE3zipAA0C0Cy5ValueQz_AGQyd__tGqd__4with_tAaBRd__lF">zip(with:)</a></code>. Returns nil if the sequence is empty.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">properties</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt">S</span><span class="o">.</span><span class="kt">Iterator</span><span class="o">.</span><span class="kt">Element</span><span class="o">.</span><span class="kt">Value</span><span class="p">]</span><span class="o">&gt;</span><span class="p">?</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAASb5ValueRtzrlE6negateAA0C0CySbGyF"></a>
+                    <a name="//apple_ref/swift/Method/negate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAASb5ValueRtzrlE6negateAA0C0CySbGyF">negate()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a property that computes a logical NOT in the latest values of <code>self</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">negate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that contains the logial NOT results.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAASb5ValueRtzrlE3andAA0C0CySbGqd__AaBRd__SbADRtd__lF"></a>
+                    <a name="//apple_ref/swift/Method/and(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAASb5ValueRtzrlE3andAA0C0CySbGqd__AaBRd__SbADRtd__lF">and(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a property that computes a logical AND between the latest values of <code>self</code>
+and <code>property</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">and</span><span class="o">&lt;</span><span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">P</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">P</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>property</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Property to be combined with <code>self</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that contains the logial AND results.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13ReactiveSwift16PropertyProtocolPAASb5ValueRtzrlE2orAA0C0CySbGqd__AaBRd__SbADRtd__lF"></a>
+                    <a name="//apple_ref/swift/Method/or(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13ReactiveSwift16PropertyProtocolPAASb5ValueRtzrlE2orAA0C0CySbGqd__AaBRd__SbADRtd__lF">or(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a property that computes a logical OR between the latest values of <code>self</code>
+and <code>property</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">or</span><span class="o">&lt;</span><span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">P</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Property.html">Property</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">P</span> <span class="p">:</span> <span class="kt">PropertyProtocol</span><span class="p">,</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Value</span> <span class="o">==</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>property</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Property to be combined with <code>self</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A property that contains the logial OR results.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://reactivecocoa.io/" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2018-07-17)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
