@@ -1,0 +1,362 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Action.swift",
+      "line": 275,
+      "symbol": "Action.bindingTarget",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Bag.swift",
+      "line": 22,
+      "symbol": "Bag.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Bag.swift",
+      "line": 28,
+      "symbol": "Bag.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/EventLogger.swift",
+      "line": 13,
+      "symbol": "LoggingEvent.Signal",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/EventLogger.swift",
+      "line": 21,
+      "symbol": "LoggingEvent.SignalProducer",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/EventLogger.swift",
+      "line": 30,
+      "symbol": "defaultEventLog(identifier:event:fileName:functionName:lineNumber:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Lifetime.swift",
+      "line": 102,
+      "symbol": "Lifetime.Token.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Lifetime.swift",
+      "line": 106,
+      "symbol": "Lifetime.Token.dispose()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Observer.swift",
+      "line": 13,
+      "symbol": "Signal.Observer.Action",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Optional.swift",
+      "line": 14,
+      "symbol": "OptionalProtocol.init(reconstructing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Optional.swift",
+      "line": 25,
+      "symbol": "Optional.init(reconstructing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Property.swift",
+      "line": 49,
+      "symbol": "MutablePropertyProtocol.bindingTarget",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 6,
+      "symbol": "Result.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 13,
+      "symbol": "Result.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 23,
+      "symbol": "ResultProtocol.Success",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 24,
+      "symbol": "ResultProtocol.Failure",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 26,
+      "symbol": "ResultProtocol.init(success:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 27,
+      "symbol": "ResultProtocol.init(failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 29,
+      "symbol": "ResultProtocol.result",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 33,
+      "symbol": "Result.init(success:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 37,
+      "symbol": "Result.init(failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/ResultExtensions.swift",
+      "line": 41,
+      "symbol": "Result.result",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Scheduler.swift",
+      "line": 72,
+      "symbol": "ImmediateScheduler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Scheduler.swift",
+      "line": 221,
+      "symbol": "QueueScheduler.queue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/Signal.swift",
+      "line": 418,
+      "symbol": "SignalProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/SignalProducer.swift",
+      "line": 19,
+      "symbol": "SignalProducer.ProducedSignal",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 20,
+      "symbol": "BindingTargetProvider.Value",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 22,
+      "symbol": "BindingTargetProvider.bindingTarget",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 107,
+      "symbol": "BindingTarget.lifetime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 108,
+      "symbol": "BindingTarget.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 110,
+      "symbol": "BindingTarget.bindingTarget",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 153,
+      "symbol": "Optional.Value",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UnidirectionalBinding.swift",
+      "line": 155,
+      "symbol": "Optional.bindingTarget",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 18,
+      "symbol": "SignalProducer.startWithResult(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 24,
+      "symbol": "SignalProducer.startWithResult(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 28,
+      "symbol": "SignalProducer.startWithValues(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 34,
+      "symbol": "SignalProducer.startWithFailed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 40,
+      "symbol": "Signal.observeResult(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 46,
+      "symbol": "Signal.observeResult(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 50,
+      "symbol": "Signal.observeValues(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 56,
+      "symbol": "Signal.observeFailed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 63,
+      "symbol": "SignalProducer.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 67,
+      "symbol": "SignalProducer.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 73,
+      "symbol": "SignalProducer.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 77,
+      "symbol": "SignalProducer.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 83,
+      "symbol": "SignalProducer.flatMapError(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 89,
+      "symbol": "Signal.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 93,
+      "symbol": "Signal.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 100,
+      "symbol": "Signal.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 104,
+      "symbol": "Signal.flatMap(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ReactiveCocoa/ReactiveSwift/Sources/UninhabitedTypeGuards.swift",
+      "line": 110,
+      "symbol": "Signal.flatMapError(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/ReactiveCocoa/ReactiveSwift"
+}
